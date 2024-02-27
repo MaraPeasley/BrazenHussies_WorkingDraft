@@ -123,7 +123,7 @@ Programmer: Mara Peasley
     transform: translate(-50%, -50%);
 }
 .vl{
-    border-left: 2px solid @color1;
+    border-left: 3px solid @color1;
     height: 30px;
     position: absolute;
     left: 50%;
@@ -131,7 +131,7 @@ Programmer: Mara Peasley
 }
 hr{
     display: block;
-    border-top: 1px solid @color1;
+    border-top: 2px solid @color1;
     margin: .5em 1.5em;
 }
 .mobile_only{
@@ -166,6 +166,9 @@ header {
     div.top{
         display: flex;
         justify-content: space-between;
+    }
+    .desktop-nav{
+        display: none;
     }
 }
 
@@ -206,6 +209,8 @@ main {
     section.note{
         background-color: @color5;
         padding: 1.5em .5em;
+        border-radius: 5px;
+        margin-top: 2em;
         h2{
             padding: 0 .5em .5em .5em;
             //font-family: 'Kotta One', serif;
@@ -294,16 +299,10 @@ main {
             }
         }
     }
-    #bette{
+    .bette{
         width: 100%;
-        margin: -5em auto;
-        display: block;
+        margin: -2em auto;
     }
-}
-main.curtain-texture{
-    background-image: url('../images/curtain_background.png');
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 main.paper-texture{
     //background-image: url('../images/paper_texture.png');
@@ -343,7 +342,7 @@ footer {
     }
 }
 footer.coverpage{
-    margin-top: 5em;
+    margin-top: 1.5em;
 }
 
 //DETERMINES SIZING FOR ALL HEADINGS FOR THE PAGE BY EM
@@ -396,6 +395,12 @@ a {
     }*/
 }
 
+body.curtain-texture{
+    background-image: url('../images/curtain_background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 body {
     overflow-x: hidden;
     //sets all font for page as Ubuntu - a simple slightly wide sans-serif font
@@ -434,8 +439,20 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
         h1{
             font-size: 3em;
         }
+        .bette{
+            width: 200%;
+            max-width: none;
+            margin: 0 -5em;
+        }
+        section.note{
+            display: block;
+            width: 100%;
+        }
+        img.desktop_only{
+            width: 100%;
+        }
         section.article{
-            margin: -4em 3em 2em 3em;
+            margin: -3em 3em 2em 3em;
             padding: 1em 2.5em;
             h1{
                 padding: 0;
@@ -502,11 +519,17 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
             }
         }
     }
+    main.coverpage{
+        overflow: hidden;
+    }
     
     footer {
         ul{
             font-size: .75em;
         }
+    }
+    footer.coverpage{
+        margin-top: 0;
     }
     
     body {
@@ -533,21 +556,94 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
     }
     .desktop_only{
         display: block;
+        margin-bottom: 2em;
     }
     .vl{
         border-left: 3px solid @color1;
+    }
+    #myBtn{
+        right: 65px;
+        padding: .5em 4em;
+    }
+
+    header{
+        h1{
+            font-size: 1.5em;
+        }
+        span.menu-icon{
+            display: none;
+        }
+        .desktop-nav{
+            display: block;
+            ul{
+                display: inline-block;
+                margin: .25em auto 0 auto;
+            }
+            li{
+                float: left;
+                padding: 0 .25em;
+                a{
+                    color: @color3;
+                    padding: .5em;
+                }
+                a.active{
+                    font-weight: bold;
+                    color: @darkColor1;
+                    background-color: @color3;
+                    border-radius: 5px;
+                }
+            }
+        }
     }
 
     main {
         h1{
             font-size: 4em;
         }
+        hr{
+            display: block;
+            margin: .5em auto;
+            width: 70%;
+        }
+        .bette{
+            width: 140%;
+            margin: 0 -6em;
+        }
+        section.note{
+            padding: 1.5em;
+        }
+        section.article{
+            padding: 1em 2.5em 3em 2.5em;
+            margin: -5em auto 2em auto;
+            width: 70%;
+            display: block;
+            h1{
+                font-size: 3.5em;
+            }
+            p.article{
+                padding-top: 1em;
+                margin: 0 auto;
+                width: 65%;
+            }
+            p.date{
+                font-size: .75em;
+            }
+            div.author{
+                font-size: 1em;
+            }
+            img.article-image{
+                padding: 2em 2em 1em 2em;
+                margin: 0 auto;
+                width: 50%;
+                display: block;
+            }
+        }
         section.article_selection{
             h3{
                 display: block;
                 margin-right: auto;
                 margin-left: auto;
-                width: 60%;
+                width: 65%;
             }
             h4{
                 //display: block;
@@ -556,7 +652,8 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
                 width: 60%;
             }
             p{
-                width: 45%;
+                //font-size: 1.25em;
+                width: 50%;
             }
             hr{
                 width: 45%;
@@ -567,40 +664,53 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
                 }
                 .button{
                     width: 15%;
-                    margin-right: 20em;
+                    margin-right: auto;
                     margin-left: auto;
+                    margin-top: 2em;
                     display: block;
                 }
             }
         }
         section.recommendations{
             display: block;
-            margin: 2em auto;
-            width: 60%;
+            margin: 1em auto;
+            width: 50%;
             .button{
-                width: 80%;
+                width: 75%;
+                font-size: .75em;
             }
         }
+        h3.recommendations{
+            text-align: left;
+            margin: 0 auto;
+            display: block;
+            width: 50%;
+        }
+    }
+    main.coverpage{
+        padding: 0 5em;
     }
     
-    footer {
+    /*footer {
+        li{
+            a{
+                color: @lightColor3;
+                padding: .5em;
+            }
+            a.active{
+                font-weight: bold;
+                color: @darkColor1;
+                background-color: @lightColor3;
+                border-radius: 5px;
+            }
+        }
+        .copy{
+            width: 50%;
+            margin: 0 auto;
+        }
+    }*/
+    footer.coverpage{
+        position: fixed;
+        bottom: 0;
     }
-    
-    body {
-    }
-}
-
-/*
-
-TV STYLESHEET
-
-The following CSS affects all screen sizes larger than 1385 pixels wide.
-
-*/
-
-@media only screen and (min-width: 1385px) {
-
-    header {
-    }
-
 }
