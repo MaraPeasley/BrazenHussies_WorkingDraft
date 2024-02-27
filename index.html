@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<!-- 
+NOTES:
+
+4/28/23
+Lots of changes made since creation
+See style.less for full list of notes and To Dos
+
+-->
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="author" content="mara peasley">
+    
+    <title>Brazen Hussies</title>
+    
+    <!-- Kotta One, Italiana, Inria Serif font connect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Italiana&family=Kotta+One&display=swap" rel="stylesheet">
+    <!-- Hamburger Menu material icons connect -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+<!-- Below are the 4 stylesheets needed to run this website:
+- reset.css clears all formatting for all default css on the site
+- helper.css adds some basic formatting and functionality back
+- grid.css is not currently being used but may be needed if you want to add charts/grids in the future
+- style.css is the output of LESS from the style.less sheet used to format and style the entire site
+- -->
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/helper.css" rel="stylesheet" type="text/css">
+    <link href="css/grid.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+    
+<body>
+    <header>
+        <div class="top">
+            <h1>Brazen Hussies</h1>
+            <span onclick="openNav()" class="menu-icon">&#9776;</span>
+        </div>
+
+             <!-- The overlay -->
+        <div id="myNav" class="overlay">
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
+            <!-- Overlay content -->
+            <div class="overlay-content">
+            <h2>Our G-Spot</h2>
+            <a href="#">Giggles</a>
+            <a href="#">Gasps</a>
+            <a href="#">Gals</a>
+            <a href="#">Guys</a>
+            <a href="#">Gays</a>
+            <a href="#">Gas</a>
+            <a href="#">Goodbyes</a>
+            </div>
+        
+        </div>
+    </header> 
+
+    <main class="curtain-texture">
+        <img src="images/paper_top.png" style="margin-bottom: -2em;">
+        <section class="note">
+            <h2>Hello Darlings,</h2>
+            <p>Welcome back to the new and improved Brazen Hussies. Buckle up for a wild ride through the absurdities of life, where we unapologetically poke fun at the quirks and quibbles of society. From celebrity antics and interviews to the baffling trends sweeping the internet, Brazen Hussies is your one-stop destination for satire that's as bold as it is hilarious. So grab your favorite beverage, settle in, and prepare to laugh until your abs ache and your cheeks hurt. Click away at our GEE-Spot for an outrageous good time!
+            </p>
+        </section>
+        <img src="images/paper_bottom.png" style="margin-top: -1em;">
+
+        <img src="images/bette_transparent.png" id="bette">
+    </main>
+
+    <footer class="coverpage">
+        <ul>
+            <li><a href="#">Giggles</a></li>
+            <li><a href="#">Gasps</a></li>
+            <li><a href="#">Gals</a></li>
+            <li><a href="#">Guys</a></li>
+        </ul>
+        <ul style="margin-bottom: .5em;">
+            <li><a href="#">Gays</a></li>
+            <li><a href="#">Gas</a></li>
+            <li><a href="#">Goodbyes</a></li>
+        </ul>
+        <div class="copy">
+            <p>
+                <span class="material-symbols-outlined">
+                copyright</span> Brazen Hussies &amp;
+                <span class="material-symbols-outlined">copyright</span>  Mara Peasley
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script src="scripts/slidenav.js"></script>
+    <script src="scripts/totopbutton.js"></script>
+</body>
+</html>

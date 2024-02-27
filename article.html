@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<!-- 
+NOTES:
+
+4/28/23
+Lots of changes made since creation
+See style.less for full list of notes and To Dos
+
+-->
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="author" content="mara peasley">
+    
+    <title>Brazen Hussies</title>
+    
+    <!-- Kotta One, Italiana, Inria Serif font connect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Italiana&family=Kotta+One&display=swap" rel="stylesheet">
+    <!-- Hamburger Menu material icons connect -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- Up Arrow material icons connect -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+<!-- Below are the 4 stylesheets needed to run this website:
+- reset.css clears all formatting for all default css on the site
+- helper.css adds some basic formatting and functionality back
+- grid.css is not currently being used but may be needed if you want to add charts/grids in the future
+- style.css is the output of LESS from the style.less sheet used to format and style the entire site
+- -->
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/helper.css" rel="stylesheet" type="text/css">
+    <link href="css/grid.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+    
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><span class="material-symbols-outlined" style="display: flex; justify-content: center;">keyboard_arrow_up</span></button>
+
+    <header>
+        <div class="top">
+            <h1>Brazen Hussies</h1>
+            <span onclick="openNav()" class="menu-icon">&#9776;</span>
+        </div>
+
+             <!-- The overlay -->
+        <div id="myNav" class="overlay">
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
+            <!-- Overlay content -->
+            <div class="overlay-content">
+            <h2>Our G-Spot</h2>
+            <a href="#">Giggles</a>
+            <a href="#">Gasps</a>
+            <a href="#">Gals</a>
+            <a href="#">Guys</a>
+            <a href="#">Gays</a>
+            <a href="#">Gas</a>
+            <a href="#">Goodbyes</a>
+            </div>
+        
+        </div>
+    </header> 
+
+    <main class="paper-texture">
+        <div class="container">
+            <img src="./images/article_arrow_header_mobile.png" class="mobile_only" style="width: 100%;">
+            <img src="./images/article_arrow_header_tablet.png" class="tablet_only" style="width: 100%;">
+            <img src="./images/article_arrow_header_tablet.png" class="desktop_only" style="width: 100%;">
+            <h1 class="centered">Gals</h1>
+        </div>
+        <section class="article">
+            <div class="group section" style="border-bottom: 1px solid #000000;">
+                <div class="col span_6_of_12">
+                    <h1>MAIL HELL</h1>
+                    <p class="date">Posted Feb. 20, 2024</p>
+                </div>
+                <div class="col span_6_of_12">
+                    <img src="./images/circle_sherry.png" class="author">
+                    <div class="author">
+                        <p>Sherry Baker</p>
+                        <p style="line-height: .75em;">Brazen Hussies Founder</p>
+                    </div>
+                </div>
+            </div>
+            <p style="padding-top: .5em;">
+                This is Sher giving you the low down on a true doozy example of the oxymoron known as Customer Service. And admit it, you’ve been in Customer “Service” Hell, too. This one was a sojourn into mail hell (not “male hell”, although I’ve been there a time or two)
+                <br>
+                <br>
+                Let’s file it under No Good Deed Goes Unpunished.
+                <br>
+                <br>
+                Say whaaat? Say all I did was to try to perk up on an old friend on Valentine’s Day. No romance involved (so get your mind off that other kind of “perking up”) but he was recently in Paris and misses it.  He has also written a film script set in Paris which is quite different and ooh-la-la fun, but he hasn’t found a movie deal yet. And he’s been a bit depressed.<br>
+                <br>
+                So, hoping to make him smile, I sent him a little artsy Paris-themed gift along with a handmade Valentine consisting of a collage of Far Side cartoons and other silliness.
+                I mailed it, in person, at the post office, via Priority two-day mail to the same address in L.A. I’ve used before for him.
+                <br>
+                <br>
+                It was insured.<br>
+                It had a tracking number.<br>
+                It never got there.<br>
+                But it got somewhere!<br>
+                <br>
+                I used the tracking number on the USPS website to see if my friend had received his gift and I got what sounded at first like good news:<br>
+                “Your package was delivered!”
+                <br>
+                <br>
+                Only it was delivered to - get this – not Los Angeles but Philadelphia.<br>
+                And not to an address in Philadelphia.<br>
+                Just Philadelphia.
+                <br>
+                <br>
+                And that, dear ladies and gentlemen and everyone in between, is at heart of this tale which we’ll call “HAS EVERYONE IN CUSTOMER SERVICE GONE INSANE???”<br>
+                Sorry for yelling.
+                </p>
+
+                <img src="./images/mail_hell.jpg" class="article-image">
+
+                <p>
+                I contacted the writer dude and explained – sending a copy of the mail receipt and tracking number – that I had tried to surprise him and, once again, perk him up.
+                <br>
+                <br>
+                He emailed back: “Thanks. I checked the tracking number. Why is it in Philadelphia?”
+                <br>
+                <br>
+                Beats the heck out of me.
+                <br>
+                <br>
+                I called USPS customer service and was told via, of course, a recording, that the wait to speak to an actual person was 62 minutes.(Exactly 62 minutes. How they know this, I have no clue.)
+                I took the option of clicking number 1 to have them call me back in, well, 62 minutes. Of course, they never did.<br>
+                <br>
+                So, I went back to the USPS website and filled out the form to file a complaint… I carefully read every word and sent it off.
+                <br>
+                <br>
+                I got an automated - natch -  reply claiming I had contacted technical support (WRONG) instead of customer support. And they sent me a link to customer support which was – you guessed it! – the exact same form I had ALREADY filled out.
+                <br>
+                <br>
+                Sooooo, I went back to trying to call so-called customer “service”.
+                <br>
+                <br>
+                I reached this message: “We’re sorry, all of our customer service representatives are busy helping other customers…”
+                You know the drill.
+                <br>
+                <br>
+                I opted again for a call back which – holy moly! It’s a miracle! –actually came.<br>
+                Her customer service person said her name was Billie.<br>
+                And she sounded totally annoyed she had to even speak to me or, god forbid, try to help me.
+                <br>
+                <br>
+                I went through the whole thing, with tracking number and LA address in hand. She put me on hold.
+                <br>
+                <br>
+                “Your package was delivered,” she said matter-of-factly when she finally returned 15 minutes later.. “It’s in Philadelphia.”
+                <br>
+                <br>
+                Me:“I know. That’s what I told you.“<br>
+                Billie:“Well, I don’t know why it went there. That’s where it went.Philadelphia.”<br>
+                Me:“WE HAVE ESTABLISHED THE FACT IT IS IN PHILADELPHIA! You’ll note there’s no street address, no place it was delivered to..”
+                <br>
+                <br>
+                Billie:“But it’s in Philadelphia.”<br>
+                Me:“I told you that.. I gave you the info.<br>
+                THE PROBLEM IS -- IT WAS ADDRESSED TO AN ACTUAL PERSON AND STREET ADDRESS IN LOS ANGELES.”
+                <br>
+                <br>
+                Billie:“Well, it went to Philadelphia.”<br>
+                Me(stifling scream): “OK… I get that. How do I file a claim?”
+                <br>
+                <br>
+                Billie:“What?”<br>
+                Me:“..to get my money back..”<br>
+                Billie:“..to get your money back?”<br>
+                Me:“Is there an echo on the phone?? YES.. to GET MY MONEY BACK. It was insured!”<br>
+                Billie:“Insured? “
+                <br>
+                <br>
+                Me:“YES.. how do I file a claim?”<br>
+                Billie:“I don’t know.”<br>
+                Me:“COULD YOU FIND OUT?"<br>
+                Billie:(after disappearing for five minutes) “You have to go to the postal service website and fill out the form..”<br>
+                Me:“THAT IS WHAT I ALREADY DID.. TWICE!! ”
+                <br>
+                <br>
+                Billie:“Then somebody is probably investigating.”
+                <br>
+                <br>
+                Click.</p>
+        </section>
+
+        <hr>
+        <hr>
+        <h3 class="recommendations">Wanting more?</h3>
+
+        <section class="recommendations">
+            <div class="group section">
+                <div class="col span_4_of_12">
+                    <img src="images/mail_hell.jpg">
+                    <div class="recommendations_title_date">
+                        <h4>Title</h4>
+                        <p>02/26/2024</p>
+                    </div>
+                    <p>This is a one sentece synopsis of the article...</p>
+                    <a class="button" href="#"> See more</a>
+                </div>
+                <div class="col span_4_of_12">
+                    <img src="images/mail_hell.jpg">
+                    <div class="recommendations_title_date">
+                        <h4>Title</h4>
+                        <p>02/26/2024</p>
+                    </div>
+                    <p>This is a one sentece synopsis of the article...</p>
+                    <a class="button" href="#"> See more</a>
+                </div>
+                <div class="col span_4_of_12">
+                    <img src="images/mail_hell.jpg">
+                    <div class="recommendations_title_date">
+                        <h4>Title</h4>
+                        <p>02/26/2024</p>
+                    </div>
+                    <p>This is a one sentece synopsis of the article...</p>
+                    <a class="button" href="#"> See more</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="#">Giggles</a></li>
+            <li><a href="#">Gasps</a></li>
+            <li><a href="#">Gals</a></li>
+            <li><a href="#">Guys</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Gays</a></li>
+            <li><a href="#">Gas</a></li>
+            <li><a href="#">Goodbyes</a></li>
+        </ul>
+        <div class="copy">
+            <p>
+                <span class="material-symbols-outlined">
+                copyright</span> Brazen Hussies &amp;
+                <span class="material-symbols-outlined">copyright</span>  Mara Peasley
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script src="scripts/slidenav.js"></script>
+    <script src="scripts/totopbutton.js"></script>
+</body>
+</html>

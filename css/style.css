@@ -1,0 +1,561 @@
+/*
+
+File Name: style.less
+Date: 05/31/21
+Programmer: Mara Peasley
+
+*/
+/*Black and White variables*/
+/*Color Palette:
+Source = https://coolors.co/palette/22223b-4a4e69-9a8c98-c9ada7-f2e9e4
+(checked for AAA Web Accessibility)
+*/
+/*Parametric mixin for headings */
+/*End parametric mixin for headings*/
+/*50% transparent*/
+/*text underlined and italicized*/
+/*text uppercase and bold*/
+/*image flip*/
+/*invert colors and serif*/
+/*make it pink*/
+/*sepia photo with shadow*/
+/*green border*/
+/*.topBorder() {
+    border-top: double .5em #000000;
+}*/
+/*NOTES:
+ - All comments updated on 02/21/24
+
+*/
+/* MOBILE STYLESHEET */
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  background: linear-gradient(#efedcc, #e9d183, #e9d183);
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  top: 15%;
+  /* 25% from the top */
+  width: 100%;
+  /* 100% width */
+  text-align: center;
+  /* Centered text/links */
+  margin-top: 30px;
+  /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+.overlay-content h2 {
+  padding-bottom: 1em;
+  font-family: 'Italiana', serif;
+}
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #841a07;
+  display: block;
+  /* Display block instead of inline */
+  transition: 0.3s;
+  /* Transition effects on hover (color) */
+}
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover,
+.overlay a:focus {
+  color: #b4230a;
+}
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  font-size: 40px;
+}
+/* When the height of the screen is more than 450 pixels, change the font-size of the links and position the close button again
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 36px}
+    .overlay .closebtn {
+        font-size: 60px;
+        top: 20px;
+        right: 45px;
+    }
+} */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 30px;
+  z-index: 99;
+  font-size: 0.75em;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #000000;
+  cursor: pointer;
+  padding: 0 2em;
+  border-radius: 4px;
+}
+#myBtn:hover {
+  color: #FFFFFF;
+  background-color: #b4230a;
+}
+.button {
+  border: 1px solid #000000;
+  color: #000000;
+  text-align: center;
+  padding: 0.25em 1.75em;
+  margin: 1em auto;
+  border-radius: 7px;
+  display: block;
+  width: 55%;
+}
+.container {
+  position: relative;
+  text-align: center;
+}
+.container h1 {
+  color: #efedcc;
+  font-family: 'Italiana', serif;
+  font-weight: bold;
+}
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.vl {
+  border-left: 2px solid #b4230a;
+  height: 30px;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+}
+hr {
+  display: block;
+  border-top: 1px solid #b4230a;
+  margin: 0.5em 1.5em;
+}
+.mobile_only {
+  display: block;
+}
+.tablet_only {
+  display: none;
+}
+.desktop_only {
+  display: none;
+}
+header {
+  background-color: #841a07;
+  padding: 0.25em 0;
+}
+header h1 {
+  color: #efedcc;
+  font-size: 1.25em;
+  padding-left: 1em;
+  font-family: 'Italiana', sans-serif;
+}
+header a {
+  color: #23050c;
+}
+header .menu-icon {
+  color: #efedcc;
+  margin-right: 1em;
+  align-items: center;
+  display: flex;
+  font-size: 1.25em;
+}
+header div.top {
+  display: flex;
+  justify-content: space-between;
+}
+main {
+  padding: 0 1em;
+}
+main section.article {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  padding: 1em 1.5em;
+  margin: -4em 0.5em 2em 0.5em;
+  position: relative;
+  font-size: 0.85em;
+}
+main section.article h1 {
+  line-height: 1em;
+  padding: 0.5em 0 0 0;
+  font-size: 2em;
+}
+main section.article p.date {
+  font-size: 0.75em;
+  padding-bottom: 1em;
+}
+main section.article img.author {
+  width: 15%;
+  display: inline-block;
+}
+main section.article img.article-image {
+  padding: 2em 2em 1em 2em;
+}
+main section.article div.author {
+  display: inline-block;
+  padding: 0 0 2em 0.5em;
+}
+main section.article div.author p:first-child {
+  text-decoration: underline;
+  font-weight: bold;
+}
+main section.note {
+  background-color: #f0eed0;
+  padding: 1.5em 0.5em;
+}
+main section.note h2 {
+  padding: 0 0.5em 0.5em 0.5em;
+}
+main section.note p {
+  font-size: 0.9em;
+  line-height: 1.8em;
+  padding: 0 0.75em;
+}
+main section.recommendations {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  margin: 1em 0.5em 0.5em 0.5em;
+  padding: 1em;
+}
+main section.recommendations h3 {
+  padding: 1em 0 0.5em 0;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+main section.recommendations h4 {
+  text-transform: uppercase;
+  font-size: 1.2em;
+  margin: 0 auto 0.25em auto;
+  display: block;
+  width: 80%;
+}
+main section.recommendations h5 {
+  padding: 0 1em;
+}
+main section.recommendations p {
+  font-size: 0.85em;
+  line-height: 1.5em;
+  margin: 0 auto;
+  display: block;
+  width: 80%;
+}
+main section.recommendations img {
+  padding: 10px;
+  width: 90%;
+  margin: 1em auto;
+  display: block;
+  border: 1px solid #000000;
+  border-radius: 10px;
+}
+main section.recommendations .button {
+  background-color: #e9d183;
+  border: 2px solid #c9a224;
+  margin-bottom: 2em;
+}
+main h3.recommendations {
+  padding: 1em 0 0 0;
+  text-align: center;
+  font-weight: bold;
+}
+main section.article_selection h3 {
+  padding: 0.35em 0;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2em;
+}
+main section.article_selection h4 {
+  margin-top: 3em;
+  padding: 0 0 1em 2em;
+  font-size: 1em;
+  font-style: italic;
+}
+main section.article_selection p {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 75%;
+  text-align: left;
+  line-height: 1.5em;
+  font-size: 0.85em;
+}
+main section.article_selection .recent_article .button {
+  margin: 1em 2em 1em auto;
+  width: 43%;
+  background-color: #e9d183;
+  border: 2px solid #c9a224;
+}
+main #bette {
+  width: 100%;
+  margin: -5em auto;
+  display: block;
+}
+main.curtain-texture {
+  background-image: url('../images/curtain_background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main.paper-texture {
+  background-color: #efedcc;
+  padding: 0 0 2em 0;
+}
+footer {
+  background-color: #841a07;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  padding: 0.5em;
+  overflow-x: hidden;
+}
+footer ul {
+  display: inline-block;
+  margin: 0 auto;
+}
+footer li {
+  float: left;
+  padding: 0 0.5em;
+  font-size: 0.9em;
+}
+footer li a {
+  color: #ffffff;
+}
+footer .copy {
+  font-size: 0.75em;
+  line-height: 1.5em;
+  border-top: 1px solid #ffffff;
+  padding-top: 0.5em;
+}
+footer .copy .material-symbols-outlined {
+  font-size: 0.75em;
+}
+footer.coverpage {
+  margin-top: 5em;
+}
+/*main,
+header,
+footer,
+nav {
+    padding: 1em;
+}*/
+h1 {
+  color: #000000;
+  font-size: 1.8em;
+  line-height: 1.8em;
+}
+h2 {
+  color: #000000;
+  font-size: 1.4em;
+  line-height: 1.4em;
+}
+h3 {
+  color: #000000;
+  font-size: 1.1em;
+  line-height: 1.1em;
+}
+h4 {
+  color: #000000;
+  font-size: 0.9em;
+  line-height: 0.9em;
+}
+h5 {
+  color: #000000;
+  font-size: 0.85em;
+  line-height: 0.85em;
+}
+h6 {
+  color: #000000;
+  font-size: 0.75em;
+  line-height: 0.75em;
+}
+a {
+  text-decoration: none;
+  /*&:link {
+        //makes all link/buttons have black text
+        color: @darkColor;
+    }
+    &:visited {
+        //makes all link/buttons have black text even after clicking
+        color: @darkColor;
+    }*/
+}
+body {
+  overflow-x: hidden;
+  font-family: "Inria Serif", sans-serif;
+  font-size: 18px;
+  line-height: 1.5em;
+  background-color: #FFFFFF;
+  color: #000000;
+}
+/*
+
+TABLET STYLESHEET
+
+The following CSS affects all screen sizes larger than 480 pixels wide.
+
+*/
+@media only screen and (min-width: 481px) {
+  .mobile_only {
+    display: none;
+  }
+  .tablet_only {
+    display: block;
+  }
+  .desktop_only {
+    display: none;
+  }
+  main h1 {
+    font-size: 3em;
+  }
+  main section.article {
+    margin: -4em 3em 2em 3em;
+    padding: 1em 2.5em;
+  }
+  main section.article h1 {
+    padding: 0;
+    font-size: 2.5em;
+  }
+  main section.article p {
+    font-size: 0.85em;
+    line-height: 1.75em;
+  }
+  main section.article img.article-image {
+    padding: 3em 3em 2em 3em;
+  }
+  main section.article_selection h3 {
+    text-align: left;
+    font-size: 1.5em;
+    padding: 0.75em 0 0.5em 3em;
+  }
+  main section.article_selection h4 {
+    padding-left: 3em;
+  }
+  main section.article_selection p {
+    font-size: 0.75em;
+  }
+  main section.article_selection hr {
+    padding: 0 8em;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 2px solid #b4230a;
+  }
+  main section.article_selection .recent_article img {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 10px;
+  }
+  main section.article_selection .recent_article .button {
+    width: 25%;
+    font-size: 0.75em;
+    margin-right: 5em;
+    margin-bottom: 2em;
+  }
+  main section.recommendations {
+    margin: 1em 3em;
+  }
+  main section.recommendations h4 {
+    font-size: 0.75em;
+  }
+  main section.recommendations p {
+    font-size: 0.5em;
+  }
+  main section.recommendations img {
+    margin-bottom: 0.5em;
+  }
+  main section.recommendations .button {
+    margin-bottom: 0;
+    padding: 0;
+    font-size: 0.65em;
+  }
+  footer ul {
+    font-size: 0.75em;
+  }
+  body {
+    font-size: 24px;
+  }
+}
+/*
+
+DESKTOP STYLESHEET
+
+The following CSS affects all screen sizes larger than 1024 pixels wide.
+
+*/
+@media only screen and (min-width: 1025px) {
+  .mobile_only {
+    display: none;
+  }
+  .tablet_only {
+    display: none;
+  }
+  .desktop_only {
+    display: block;
+  }
+  .vl {
+    border-left: 3px solid #b4230a;
+  }
+  main h1 {
+    font-size: 4em;
+  }
+  main section.article_selection h3 {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 60%;
+  }
+  main section.article_selection h4 {
+    margin-right: auto;
+    margin-left: auto;
+    width: 60%;
+  }
+  main section.article_selection p {
+    width: 45%;
+  }
+  main section.article_selection hr {
+    width: 45%;
+  }
+  main section.article_selection .recent_article img {
+    width: 50%;
+  }
+  main section.article_selection .recent_article .button {
+    width: 15%;
+    margin-right: 20em;
+    margin-left: auto;
+    display: block;
+  }
+  main section.recommendations {
+    display: block;
+    margin: 2em auto;
+    width: 60%;
+  }
+  main section.recommendations .button {
+    width: 80%;
+  }
+}
+/*
+
+TV STYLESHEET
+
+The following CSS affects all screen sizes larger than 1385 pixels wide.
+
+*/
