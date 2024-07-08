@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<!-- 
+NOTES:
+
+4/28/23
+Lots of changes made since creation
+See style.less for full list of notes and To Dos
+
+-->
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="author" content="mara peasley">
+    
+    <title>Brazen Hussies</title>
+    
+    <!-- Kotta One, Italiana, Inria Serif font connect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Italiana&family=Kotta+One&display=swap" rel="stylesheet">
+    <!-- Hamburger Menu material icons connect -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- Up Arrow material icons connect -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+<!-- Below are the 4 stylesheets needed to run this website:
+- reset.css clears all formatting for all default css on the site
+- helper.css adds some basic formatting and functionality back
+- grid.css is not currently being used but may be needed if you want to add charts/grids in the future
+- style.css is the output of LESS from the style.less sheet used to format and style the entire site
+- -->
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/helper.css" rel="stylesheet" type="text/css">
+    <link href="css/grid.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+    
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><span class="material-symbols-outlined" style="display: flex; justify-content: center;">keyboard_arrow_up</span></button>
+
+    <header>
+        <div class="top">
+            <h1><a href="index.html" style="color: #efedcc;">Brazen Hussies</a></h1>
+            <div class="desktop-nav">
+                <ul>
+                    <li><a href="gals.html">Gals</a></li>
+                    <li><a href="gays.html">Gays</a></li>
+                    <li><a href="gasp.html">Gasp!</a></li>
+                    <li><a href="movies.html">Movies</a></li>
+                    <li><a href="about.html">About These Hussies</a></li>
+                    <li><a href="aptitude.html">Hussy Aptitude</a></li>
+                </ul>
+            </div>
+            <span onclick="openNav()" class="menu-icon">&#9776;</span>
+        </div>
+
+             <!-- The overlay -->
+        <div id="myNav" class="overlay">
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
+            <!-- Overlay content -->
+            <div class="overlay-content">
+            <h2>Our G-Spot</h2>
+            <a href="gals.html">Gals</a>
+            <a href="gays.html">Gays</a>
+            <a href="gasp.html">Gasp!</a>
+            <a href="movies.html">Movies</a>
+            <a href="about.html">About These Hussies</a>
+            <a href="aptitude.html">Hussy Aptitude</a>
+            </div>
+        
+        </div>
+    </header>
+
+    <main class="paper-texture">
+        <div class="container">
+            <img src="./images/article_arrow_header_mobile.png" class="mobile_only" style="width: 100%;">
+            <img src="./images/article_arrow_header_tablet.png" class="tablet_only" style="width: 100%;">
+            <img src="./images/article_arrow_header_tablet.png" class="desktop_only" style="width: 100%;">
+            <h1 class="centered">Hussy?</h1>
+        </div>
+
+        <section class="article_selection">
+            <hr style="margin-top: 1em;">
+            <hr>
+            <p>
+                Are you a bit brazen? Do you possess a hint of hussiness? 
+                Want to go ALL the way and become, dare we say it, a (capital B, capital H) Brazen Hussy a la the absolutely fabulous Sher and Mel?
+            </p>
+            <h2>Of COURSE you do, darlings!</h2>
+            <p>
+                But do you have what it takes? The je nais se quois, the sass, the spunk, the chutzpah, the APTITUDE and attitude to pursue your brazen dreams? 
+                <br><br>
+                Remember, mon ami, when it comes to being a Brazen Hussy or Brazen Huss-he, what matters is not physical perfection or gorgeousness. Of course, looks help, darlings. But we are talking about the kind of LOOKS you can perfect with the right attitude and confidence - your stare, glare or flirty eyelash batting that can wither a bully without a word, affirm “don’t dither…come hither!” and project your sparkling self-confidence about being uniquely brazenly YOU!
+                <br><br>
+                Just answer this brilliant (naturalmente) and totally scientific (cough) questionnaire to find out your Brazen Hussies Aptitude:
+                <br><br>
+                <strong>The lowest form of life is:</strong><br>
+                a. an amoeba<br>
+                b. crooked politicians<br>
+                c. any lying, cheating, abusive jerk who thinks other people are doormats or possessions
+                <br><br>
+                <strong>How do you refer to yourself?</strong><br>
+                a. "you talkin' to ME?"<br>
+                b.  little ol’ moi<br>
+                c. with the royal "we"
+                <br><br>
+                <strong>If you could take only one thing with you to a desert island it would be:</strong><br>
+                a. a copy of "The Life Changing Magic of Tidying Up"<br>
+                b. make-up<br>
+                c. a Cary Grant clone
+                <br><br>
+                <strong>A brazen hussy is:</strong><br>
+                a. a tramp<br>
+                b. a scamp<br>
+                c. a vamp
+                <br><br>
+                <strong>Here's how you feel about middle age and beyond:</strong><br>
+                a. "The worms, the canker and the grief are mine alone." -- Lord Byron<br>
+                b. Nobody is more fabulous than Helen Mirren!<br>
+                c. “You’re never too old to become younger.” – Mae West 
+                <br><br>
+                <strong>The quote that best reflects your personal philosophy is:</strong><br>
+                a. "Life's a bitch and then you die."<br>
+                b. "I know it's only rock 'n' roll, but I like it, I like it, yes I do..."<br>
+                c. "Life is a banquet and most poor suckers are starving to death. " -- Auntie Mame
+                <br><br>
+                <strong>You have mastered the art of having:</strong><br>
+                a. multiple personalities<br>
+                b. multiple orgasms<br>
+                c. multiple sarcasms
+                <br><br>
+                <strong>Your absolute fave web site on the entire planet is:</strong><br>
+                a. Flat Earth Society<br>
+                b. The Real Housewives of (fill in the blank.. )<br>
+                c. THE BRAZEN HUSSIES
+                <br><br>
+                Now it's time to SCORE with Sher and Mel! (makes you feel sort of tingly all over just to think about it, n'est-ce pas?)
+                <br><br>
+                For every a. answer, give yourself 1 point (because you did bother to try… le sigh).
+                <br><br>
+                For every b. you selected, you get 50 points.
+                <br><br>
+                For every c, grant your brazen self 100 points.
+                <br><br>
+                Your score:
+                <br><br>
+                <strong>8 to 201</strong> -- The outlook for achieving true hussiedom is not exactly bright, sweeties. But don't give up totally. No, the Brazen Hussies are here for you. <br>
+                And if you continue to visit us every week, it is HIGHLY LIKELY, according to scientific studies (ok ok OK, we made that part up)  that some of our muy fabuloso and fascinating hussiness will begin to influence your (possibly now hum-drum) life and stir that fire of brazenness that lurks in your bosom and/or or other body parts!
+                <br><br>
+                <strong>202 to 500</strong> -- You definitely have brazen potential, darlings. We are SOOO proud of you!
+                <br><br>
+                <strong>550 to  800</strong> --  You can proudly wear the title Brazen Hussy or Brazen Huss-he! In fact, why not add it to your business card! And consider our web site your web site, darlings, for fun, encouragement and occasional snits ... we send you loads of congratulations and air kisses!</p>
+            <hr>
+            <hr>
+        </section>
+
+    </main>
+
+    <footer>
+        <!--<ul>
+            <li><a href="gals.html">Gals</a></li>
+            <li><a href="gals.html">Guys</a></li>
+            <li><a href="gals.html">Gays</a></li>
+            <li><a href="gals.html">Gasp!</a></li>
+            <li><a href="gals.html">Gas</a></li>
+        </ul>
+        <ul>
+            <li><a href="gals.html">Goodbyes</a></li>
+            <li><a href="gals.html">Galactic</a></li>
+            <li><a href="gals.html">Get Some</a></li>
+            <li><a href="gals.html">Who Are These Hussies</a></li>
+        </ul>-->
+        <div class="copy">
+            <p>
+                <span class="material-symbols-outlined">
+                copyright</span> Brazen Hussy &amp;
+                <span class="material-symbols-outlined">copyright</span>  Brazen Hussies
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script src="scripts/slidenav.js"></script>
+    <script src="scripts/totopbutton.js"></script>
+</body>
+</html>

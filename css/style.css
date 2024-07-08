@@ -281,11 +281,21 @@ main h3.recommendations {
   text-align: center;
   font-weight: bold;
 }
+main section.article_selection h2 {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 0.5em 0;
+}
 main section.article_selection h3 {
   padding: 0.35em 0;
   font-weight: bold;
   text-align: center;
   font-size: 2em;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 main section.article_selection h4 {
   margin-top: 3em;
@@ -394,6 +404,9 @@ a {
         //makes all link/buttons have black text even after clicking
         color: @darkColor;
     }*/
+}
+strong {
+  font-weight: bolder;
 }
 body.curtain-texture {
   background-image: url('../images/curtain_background.png');
@@ -590,7 +603,7 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
     display: block;
   }
   main section.article h1 {
-    font-size: 3.5em;
+    font-size: 2.5em;
   }
   main section.article p.article {
     padding-top: 1em;
