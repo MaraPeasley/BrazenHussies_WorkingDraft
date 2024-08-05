@@ -21,6 +21,10 @@ See style.less for full list of notes and To Dos
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Italiana&family=Kotta+One&display=swap" rel="stylesheet">
+    <!-- Contrail One font connect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Contrail+One&display=swap" rel="stylesheet">
     <!-- Hamburger Menu material icons connect -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <!-- Up Arrow material icons connect -->
@@ -43,16 +47,26 @@ See style.less for full list of notes and To Dos
 
     <header>
         <div class="top">
-            <h1><a href="index.html" style="color: #efedcc;">Brazen Hussies</a></h1>
+            <a class="top_logo" href="index.html">
+                <img src="images/title_creme.png">
+            </a>
             <div class="desktop-nav">
-                <ul>
-                    <li><a href="gals.html">Gals</a></li>
-                    <li><a href="gays.html">Gays</a></li>
-                    <li><a href="galactica.html">Galactica</a></li>
-                    <li><a href="gasp.html">Gasp!</a></li>
-                    <li><a href="movies.html">Get Popcorn</a></li>
-                    <li><a href="about.html">Get to Know Us</a></li>
-                </ul>
+                <h5>Check out our...</h5>
+                <h4>Gee-Spot!</h4>
+                <a href="gals.html">Gals</a>
+                <a href="guys.html">Guys</a>
+                <a href="gays.html">Gays</a>
+                <a href="gossip.html">Gossip</a>
+                <a href="gasp.html">Gasp!</a>
+                <a href="galactica.html">Galactica</a>
+                <a href="astro.html">Get ASTRO</a>
+                <a href="movies.html">Get Popcorn</a>
+                <a href="gab.html">Gab</a>
+                <!-- <a href="silly.html">Get Silly</a> -->
+                <a href="goodbyes.html">Goodbyes</a>
+                <a href="serious.html">Getting Serious</a>
+                <a href="store.html">Get Some</a>
+                <a href="about.html">Get to Know Us</a>
             </div>
             <span onclick="openNav()" class="menu-icon">&#9776;</span>
         </div>
@@ -64,18 +78,27 @@ See style.less for full list of notes and To Dos
         
             <!-- Overlay content -->
             <div class="overlay-content">
-            <h2>Our G-Spot</h2>
-            <a href="gals.html">Gals</a>
-            <a href="gays.html">Gays</a>
-            <a href="gasp.html">Gasp!</a>
-            <a href="movies.html">Movies</a>
-            <a href="about.html">About These Hussies</a>
-            <a href="aptitude.html">Hussy Aptitude</a>
+                <h5>Check out our...</h5>
+                <h4>Gee-Spot!</h4>
+                <a href="gals.html">Gals</a>
+                <a href="guys.html">Guys</a>
+                <a href="gays.html">Gays</a>
+                <a href="gossip.html">Gossip</a>
+                <a href="gasp.html">Gasp!</a>
+                <a href="galactica.html">Galactica</a>
+                <a href="astro.html">Get ASTRO</a>
+                <a href="movies.html">Get Popcorn</a>
+                <a href="gab.html">Gab</a>
+                <!-- <a href="silly.html">Get Silly</a> -->
+                <a href="goodbyes.html">Goodbyes</a>
+                <a href="serious.html">Getting Serious</a>
+                <a href="store.html">Get Some</a>
+                <a href="about.html">Get to Know Us</a> 
             </div>
         
         </div>
     </header>
-
+    
     <main class="paper-texture">
         <div class="container">
             <img src="./images/article_arrow_header_mobile.png" class="mobile_only" style="width: 100%;">
@@ -85,23 +108,10 @@ See style.less for full list of notes and To Dos
         </div>
 
         <section class="article_selection">
-            <!-- <hr style="margin-top: 1em;">
+            <hr style="margin-top: 1em;">
             <hr>
-            <h3>Welcome to… ta da…
-                <br>GALACTICA!</h3>
-            <p style="text-align: center;">
-                Why, we just heard a collective “Say whaaaaat?!!” <br> 
-                And we are also picking up on what you’re thinking through our interstellar communication devices (you know, our advanced telepathic brain cells, honed on years of being fabulously inquisitive, a tad nosey and wearing gem clad earrings). <br>
-                “What on planet Earth does THIS have to do with the Brazen Hussies?”
-                You asked and we’ll answer. <br>
-                Buckle up and take some oxygen if you need it as we ‘splain ourselves.
-                GALACTICA is the Hussies’ online launching pad for flights of sometimes fancy, sometimes wonder, sometimes science, sometimes sci fi (the good and so-bad-it’s hilarious) and, yep, silliness here and there and some brazen takes on stars, space, interplanetary journeys and more..<br>
-                Really. <br>
-                So, if you feel a little spacey, darlings, click on a link – and ROCK(et) ON! </p>
-
-                <div class="article_selection recent_article">
-                    <img src="./images/galactica_cover_page.jpg">
-                </div> -->
+            <p class="content-intro"> Have a brazenly over-the-top interest in space? You’ve touched down at the right place, darlings. . .
+            </p>
             <hr>
             <hr style="margin-bottom: 0;">
             <div class="vl" style="height: 50px; margin-bottom: .5em;"></div>
@@ -221,5 +231,14 @@ See style.less for full list of notes and To Dos
     </script>
     <script src="scripts/slidenav.js"></script>
     <script src="scripts/totopbutton.js"></script>
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0";
+        }
+    </script>
 </body>
 </html>

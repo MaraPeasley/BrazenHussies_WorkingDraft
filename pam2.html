@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<!-- 
+NOTES:
+
+4/28/23
+Lots of changes made since creation
+See style.less for full list of notes and To Dos
+
+-->
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="author" content="mara peasley">
+    
+    <title>Brazen Hussies</title>
+    
+    <!-- Kotta One, Italiana, Inria Serif font connect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Italiana&family=Kotta+One&display=swap" rel="stylesheet">
+    <!-- Contrail One font connect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Contrail+One&display=swap" rel="stylesheet">
+    <!-- Hamburger Menu material icons connect -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- Up Arrow material icons connect -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+<!-- Below are the 4 stylesheets needed to run this website:
+- reset.css clears all formatting for all default css on the site
+- helper.css adds some basic formatting and functionality back
+- grid.css is not currently being used but may be needed if you want to add charts/grids in the future
+- style.css is the output of LESS from the style.less sheet used to format and style the entire site
+- -->
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/helper.css" rel="stylesheet" type="text/css">
+    <link href="css/grid.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+    
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><span class="material-symbols-outlined" style="display: flex; justify-content: center;">keyboard_arrow_up</span></button>
+
+    <header>
+        <div class="top">
+            <a class="top_logo" href="index.html">
+                <img src="images/title_creme.png">
+            </a>
+            <div class="desktop-nav">
+                <h5>Check out our...</h5>
+                <h4>Gee-Spot!</h4>
+                <a href="gals.html">Gals</a>
+                <a href="guys.html">Guys</a>
+                <a href="gays.html">Gays</a>
+                <a href="gossip.html">Gossip</a>
+                <a href="gasp.html">Gasp!</a>
+                <a href="galactica.html">Galactica</a>
+                <a href="astro.html">Get ASTRO</a>
+                <a href="movies.html">Get Popcorn</a>
+                <a href="gab.html">Gab</a>
+                <!-- <a href="silly.html">Get Silly</a> -->
+                <a href="goodbyes.html">Goodbyes</a>
+                <a href="serious.html">Getting Serious</a>
+                <a href="store.html">Get Some</a>
+                <a href="about.html">Get to Know Us</a>
+            </div>
+            <span onclick="openNav()" class="menu-icon">&#9776;</span>
+        </div>
+
+             <!-- The overlay -->
+        <div id="myNav" class="overlay">
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
+            <!-- Overlay content -->
+            <div class="overlay-content">
+                <h5>Check out our...</h5>
+                <h4>Gee-Spot!</h4>
+                <a href="gals.html">Gals</a>
+                <a href="guys.html">Guys</a>
+                <a href="gays.html">Gays</a>
+                <a href="gossip.html">Gossip</a>
+                <a href="gasp.html">Gasp!</a>
+                <a href="galactica.html">Galactica</a>
+                <a href="astro.html">Get ASTRO</a>
+                <a href="movies.html">Get Popcorn</a>
+                <a href="gab.html">Gab</a>
+                <!-- <a href="silly.html">Get Silly</a> -->
+                <a href="goodbyes.html">Goodbyes</a>
+                <a href="serious.html">Getting Serious</a>
+                <a href="store.html">Get Some</a>
+                <a href="about.html">Get to Know Us</a> 
+            </div>
+        
+        </div>
+    </header>
+    
+    <main class="paper-texture">
+        <div class="container">
+            <img src="./images/article_arrow_header_mobile.png" class="mobile_only" style="width: 100%;">
+            <img src="./images/article_arrow_header_tablet.png" class="tablet_only" style="width: 100%;">
+            <img src="./images/article_arrow_header_tablet.png" class="desktop_only" style="width: 100%;">
+            <h1 class="centered">GOODBYES</h1>
+        </div>
+        <section class="article">
+            <div class="group section" style="border-bottom: 1px solid #000000;">
+                <div class="col span_6_of_12">
+                    <h1>Another Fated Meeting with Iska</h1>
+                    <p class="date">Posted Aug. 15, 2024</p>
+                </div>
+                <div class="col span_6_of_12">
+                    <img src="./images/circle_sherry.png" class="author">
+                    <div class="author">
+                        <p>Sherry Baker</p>
+                        <p style="line-height: .75em;">Brazen Hussies Founder</p>
+                    </div>
+                </div>
+            </div>
+            <p class="article" style="padding-top: .5em;">
+                Look, I’m sorry if anyone thought I was being a tease or that I have some Normal Rockwell-like scenario here with my tale. You may be wondering if I actually did anything to help Iska. I didn’t know how. There is no happy ending here. I am not a good Samaritan. …but that is not the end of this story.
+                <br><br>
+                I thought you might want to know I talked to her again.
+                <br><br>
+                That initial crossing-of-paths from almost a year before our paths crossed stayed with me. I wondered if this strong woman – weathered, proud, beaming that someone, someone had simply talked to her as if she were a person and not some less-than-human eyesore blotting the landscape – was still homeless, or even alive. In fact, I inexplicably  thought of her often.
+                <br><br>
+                Then, I was running some errands on a cold December day  and I caught a glimpse of a woman trudging along North Druid Hills Road, pushing the grocery cart with plastic bags tied on this side and that, stuffed underneath and piled so high on top they looked like big beige balloons. Was it Iska? I didn’t know. She was across many lanes of traffic and I was going the opposite way. I went on.
+                </p>
+
+                <img src="./images/iska_part2.jpg" class="article-image">
+                <p class="article" style="font-size: .65em; font-style: italic; padding-top: 0;">(painting by David Hockney)</p>
+
+                <p class="article">
+                Then, a few weeks later, I saw her near N. Decatur Road, not far from Emory University. Again, I was going in the opposite way but there were fewer lanes of traffic and I was sure, this time, I recognized her. I drove as fast as I could in the traffic. Speeding, I turned at the first place  possible  and went back to find her. But she was gone.
+                <br><br>
+                Maybe she went behind an apartment building or the little group of shops at the corner. I don’t know. I searched.  But she was gone.
+                <br><br>
+                I had deadlines moved up on me because of the holiday vacation and I was on a writing marathon Monday and Tuesday. On Wednesday, I realized there was nothing to eat in the house and I dragged myself to the grocery store and then decided to treat myself – and my exhaustion – with some Starbucks coffee. 
+                <br><br>
+                I passed a Starbucks on my right, I was in the right hand lane but something seemed to inexplicably tell me, no, don’t go there – I’m not suggesting it was “woo woo” guidance, but that’s what happened. I felt I needed to keep going. And I oddly drove out of the way, really, probably two miles down the road. Then I pulled into a group of stores at the corner and I turned to go to the drive-in Starbucks window.
+                <br><br>
+                It was very cold. I saw a woman from the back standing in the parking lot near the curb. She was bundled in a gray coat with a muffler tied around her head, hunched over a grocery cart with a huge mound of bloated plastic bags sticking out and up everywhere. 
+                <br><br>
+                I stopped my car and opened the window. “Iska?” 
+                She turned around and immediately began to apologize for, I guess, for being there and being alive… She didn’t recognize me or even hear me call her name at first. She thought I was telling her to move on.
+                <br><br>
+                “I’m sorry. I will be going! I am only resting for a minute.. I will get out of the way.. I’m sorry. I am so sorry,” she said in a heavy accent.
+                <br><br>
+                I yelled louder, “ISKA, is that you? It’s me, Sherry.. remember me? The red car?”
+                <br><br>
+                She came over to the window and seemed not sure she knew who I was or what I was saying. She pointed to her ears. 
+                <br><br>
+                “I do not hear so good anymore.. I cannot see well. I am sorry..” 
+                <br><br>
+                She pulled up glasses hanging from a rope around her neck.
+                “I use these for reading but they don’t work for seeing more far.. people don’t want to see me here.. so many rich people and they don’t want to see me.. I am very old and ugly..” 
+                <br><br>
+                She leaned into the open car window, held the reading glasses up to her eyes and seemed to finally recognize me as someone, someone she had met before.
+                <br><br>
+                When I saw  the first time, back in February of that year,  she had shown me her green card.. I remember she was 64 or so.She looked older then but now she could be 80. She’d lost her front teeth. I think her nose may have been broken.
+                <br><br>
+                She said she worked at McDonald’s until last week. She walks everywhere because “ MARTA (Atlanta’s rapid transit) is very expensive..” She explained her work visa expired and she has to go back to Bulgaria. She said she is going back in about a month and she has to stay in Bulgaria , for four  months, and then she can return to the US with a new work visa. 
+                <br><br>
+                “It is very bad for old people like me in Bulgaria. I love America! I have place to sleep. But rich people here do not like to have me near.. I am ugly and old… but some people are kind, like librarian.. I go to library and read and the nice librarian helped me.. she types on computer and helped me get visa problem fixed and my trip fixed..”
+                <br><br>
+                She said she has a daughter who finally found work in another country in Europe; she’s no longer in Bulgaria. She said it is “very hard, very poor there..”
+                <br><br>
+                She doesn’t know how she will live in Bulgaria but she will live, she said, knowing she will “ come back to America! I love America!” 
+                <br><br>
+                She took her fist and tapped her heart with it as she said this. “ If I can live long enough… If I can live..”
+                <br><br>
+                I asked her to come inside with me so I could buy her some coffee and some food.  She said, no..
+                “I am old woman.. I cannot go in there. I do not have nice clothes..” 
+                <br><br>
+                I tried again.. no luck. I asked if I could buy her some coffee. “ I love coffee!” she said. 
+                Then she seemed to cloud over… “ but no.. I already had enough today..” 
+                <br><br>
+                She wasn’t going to let me buy her anything. I took out my wallet and asked if I could help her in some way.  I knew it was no use.  She insisted she would be fine.
+                <br><br>
+                “Walking keeps me going, makes me feel good! I go walk!”
+                <br><br>
+                There are a couple of homeless shelters down the road and I assume that’s where she was sleeping. They make the homeless leave during the day and you see their weather-beaten faces – some I’ve seen year after year – on the streets, sitting on MARTA benches, hovering on the edge of neighborhoods full of the privileged, like ghosts seen only out of the periphery of the eyes of the “real” people, the people with their own beds and houses and lives.
+                <br><br>
+                Iska said again she was “just an old, ugly woman..” I saw the fading sunlight shining on her features and I blurted out: “You are strong and you are beautiful!” 
+                <br><br>
+                What an inappropriate thing to say, but I said it again. “No, you are BEAUTIFUL!”<br>
+                It was as if I could see her as she once was – high cheekbones, dark blue eyes, regal somehow.. She was once beautiful and there is something about her that still was, behind her broken face.
+                <br><br>
+                “Oh, Sherry.. I remember you. You talk to me like I have a friend. I want you to have such a happy holiday!” she said.. She put her left hand in a fist again, tapping her heart.. 
+                <br><br>
+                “I will see you again when I come back to America… if I live.. if I can stay alive…” And she trudged away as the sky grew darker.
+                <br><br>
+                (Addendum: It has been more than a decade since I wrote that, quickly, after seeing Iska for the last time. I think there is little hope she is alive. I hope she did not suffer. I hope she remembered I told her she was beautiful and brave and that she touched my heart. And I hope, somehow, this country, this planet can find  more help and compassion for the dirty and lost and homeless,, no matter how broken they are.)
+                </p>
+        </section>
+
+        <hr>
+        <hr>
+        <h3 class="recommendations">Read on:</h3>
+
+        <section class="recommendations">
+            <div class="group section">
+                <div class="col span_6_of_12">
+                    <img src="./images/iska_part1_thumbnail.jpg">
+                    <div class="recommendations_title_date">
+                        <h4>Meeting Iksa</h4>
+                        <p>by Sher</p>
+                    </div>
+                    <p>I had a very moving experience one evening. I saw a homeless woman, pushing a grocery cart down the road loaded...</p>
+                    <a class="button" href="pam1.html"> See more</a>
+                </div>
+                <div class="col span_6_of_12">
+                    <img src="./images/pam_thumbnail.jpg">
+                    <div class="recommendations_title_date">
+                        <h4>Remembering Pam</h4>
+                        <p>by Sher</p>
+                    </div>
+                    <p>I am missing the best friend I ever had and probably will ever have, Pam Hoiriis. She was tiny...</p>
+                    <a class="button" href="pam3.html"> See more</a>
+                </div>
+                <!-- <div class="col span_4_of_12">
+                    <img src="./images/purloined_credit_card_story.jpg">
+                    <div class="recommendations_title_date">
+                        <h4>The Case of the Purloined Credit Card</h4>
+                        <p>by Sher</p>
+                    </div>
+                    <p>When you live intown, you learn to keep your street smarts handy but even a dame who’s been around the block a few times. . .</p>
+                    <a class="button" href="purloinedcredit.html"> See more</a>
+                </div> -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!--<ul>
+            <li><a href="gals.html">Gals</a></li>
+            <li><a href="gals.html">Guys</a></li>
+            <li><a href="gals.html">Gays</a></li>
+            <li><a href="gals.html">Gasp!</a></li>
+            <li><a href="gals.html">Gas</a></li>
+        </ul>
+        <ul>
+            <li><a href="gals.html">Goodbyes</a></li>
+            <li><a href="gals.html">Galactic</a></li>
+            <li><a href="gals.html">Get Some</a></li>
+            <li><a href="gals.html">Who Are These Hussies</a></li>
+        </ul>-->
+        <div class="copy">
+            <p>
+                <span class="material-symbols-outlined">
+                copyright</span> Brazen Hussy &amp;
+                <span class="material-symbols-outlined">copyright</span>  Brazen Hussies
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script src="scripts/slidenav.js"></script>
+    <script src="scripts/totopbutton.js"></script>
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<!-- 
+NOTES:
+
+4/28/23
+Lots of changes made since creation
+See style.less for full list of notes and To Dos
+
+-->
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="author" content="mara peasley">
+    
+    <title>Brazen Hussies</title>
+    
+    <!-- Kotta One, Italiana, Inria Serif font connect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Italiana&family=Kotta+One&display=swap" rel="stylesheet">
+    <!-- Contrail One font connect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Contrail+One&display=swap" rel="stylesheet">
+    <!-- Hamburger Menu material icons connect -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- Up Arrow material icons connect -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+<!-- Below are the 4 stylesheets needed to run this website:
+- reset.css clears all formatting for all default css on the site
+- helper.css adds some basic formatting and functionality back
+- grid.css is not currently being used but may be needed if you want to add charts/grids in the future
+- style.css is the output of LESS from the style.less sheet used to format and style the entire site
+- -->
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/helper.css" rel="stylesheet" type="text/css">
+    <link href="css/grid.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+    
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><span class="material-symbols-outlined" style="display: flex; justify-content: center;">keyboard_arrow_up</span></button>
+
+    <header>
+        <div class="top">
+            <a class="top_logo" href="index.html">
+                <img src="images/title_creme.png">
+            </a>
+            <div class="desktop-nav">
+                <h5>Check out our...</h5>
+                <h4>Gee-Spot!</h4>
+                <a href="gals.html">Gals</a>
+                <a href="guys.html">Guys</a>
+                <a href="gays.html">Gays</a>
+                <a href="gossip.html">Gossip</a>
+                <a href="gasp.html">Gasp!</a>
+                <a href="galactica.html">Galactica</a>
+                <a href="astro.html">Get ASTRO</a>
+                <a href="movies.html">Get Popcorn</a>
+                <a href="gab.html">Gab</a>
+                <!-- <a href="silly.html">Get Silly</a> -->
+                <a href="goodbyes.html">Goodbyes</a>
+                <a href="serious.html">Getting Serious</a>
+                <a href="store.html">Get Some</a>
+                <a href="about.html">Get to Know Us</a>
+            </div>
+            <span onclick="openNav()" class="menu-icon">&#9776;</span>
+        </div>
+
+             <!-- The overlay -->
+        <div id="myNav" class="overlay">
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
+            <!-- Overlay content -->
+            <div class="overlay-content">
+                <h5>Check out our...</h5>
+                <h4>Gee-Spot!</h4>
+                <a href="gals.html">Gals</a>
+                <a href="guys.html">Guys</a>
+                <a href="gays.html">Gays</a>
+                <a href="gossip.html">Gossip</a>
+                <a href="gasp.html">Gasp!</a>
+                <a href="galactica.html">Galactica</a>
+                <a href="astro.html">Get ASTRO</a>
+                <a href="movies.html">Get Popcorn</a>
+                <a href="gab.html">Gab</a>
+                <!-- <a href="silly.html">Get Silly</a> -->
+                <a href="goodbyes.html">Goodbyes</a>
+                <a href="serious.html">Getting Serious</a>
+                <a href="store.html">Get Some</a>
+                <a href="about.html">Get to Know Us</a> 
+            </div>
+        
+        </div>
+    </header>
+    
+    <main class="paper-texture">
+        <div class="container">
+            <img src="./images/article_arrow_header_mobile.png" class="mobile_only" style="width: 100%;">
+            <img src="./images/article_arrow_header_tablet.png" class="tablet_only" style="width: 100%;">
+            <img src="./images/article_arrow_header_tablet.png" class="desktop_only" style="width: 100%;">
+            <h1 class="centered">GOODBYES</h1>
+        </div>
+        <section class="article">
+            <div class="group section" style="border-bottom: 1px solid #000000;">
+                <div class="col span_6_of_12">
+                    <h1>Remembering Pam</h1>
+                    <p class="date">Posted Aug. 15, 2024</p>
+                </div>
+                <div class="col span_6_of_12">
+                    <img src="./images/circle_sherry.png" class="author">
+                    <div class="author">
+                        <p>Sherry Baker</p>
+                        <p style="line-height: .75em;">Brazen Hussies Founder</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="article" style="font-style: italic; font-weight: bold;">
+                (Until domestic abuse is taken seriously – as long as anyone, including those who are rich and/or connected, get away with violence and even murder of their partners– we have to speak out and stand up to abusers. <br>
+                This is about my friend Pam who, by the way, was a fan of the Brazen Hussies and always encouraged and loved me. I ache to talk to her and laugh with her again,  and I always will.  – Sher)</p>
+
+            <p class="article" style="padding-top: 1.5em;">
+                I am missing the best friend I ever had and probably will ever have, Pam Hoiriis. She was tiny, a natural beauty, funny, smart, kind. She loved her cats. She once rode a motorcycle with a violinist all across the country and back, camping out, while I kept care of her kitties. 
+                <br><br>
+                She died a little over 20 years ago. But I can still hear her sweet voice in my mind, in my heart.
+                <br><br>
+                We had a running joke -- she'd call and say "Hello, it's me.. Pam.." And I'd always say, "I know!" 
+                <br><br>
+                The last time we were together in person we joked about our pathetic love lives and how nobody, but us, would believe what we had lived through.
+                <br><br>
+                "We must have been AWFUL in our past lives, real heartbreakers," Pam said, laughing. " And I hope we enjoyed every MINUTE of it!"
+                <br><br>
+                We first met years ago at a ballet class and went on to spend many evenings eating dinner together, commiserating through good and bad times, being terribly poor back in the day, but never really minding (living off Rice-a-Roni and, when I was an art critic, she'd go to gallery openings with me sometimes and, if there was food, I'd stash some of the goodies, in my pocketbook for us to eat later). 
+                <br><br>
+                We job shared for a while at a theater. We both wrote, painted.
+                <br><br>
+                She decided to go back to school, became a counselor, wanting to help the truly poor, and moved to the tiny town of Tullahoma, Tennessee. She was able to buy a small house. She thought she'd find peace. 
+                <br><br>
+                She found hell.
+                <br><br>
+                Pam impulsively married a man she hardly knew. He was wildly sexy and funny and charming.. at first. She soon learned he was an alcoholic and abusive. 
+                <br><br>
+                She called me and told me she'd gone to a local lawyer seeking help with a divorce and was who told that her husband's dad, a preacher, "owned" that town and she'd lose everything in a divorce, that nobody would ever believe what she said about the preacher's son. 
+                The lawyer laughed in her face.
+                <br><br>
+                She said, "How is this possible!  It is MY house , I own it!" The lawyer smirked and told her she'd best pack up her car with what it would hold and leave town.
+                <br><br>
+                I found some old emails from Pam tonight.
+                She wrote me this the first week of February, 2000: 
+                <br><br>
+                Sher, <br>
+                I came across this, "We are not human beings having a spiritual experience. We are spiritual beings having a human experience." And somehow it has given me some peace that I haven't had in a long time. I'm one of those people Thoreau was talking about when he described folks as leading lives of quiet desperation.
+                <br><br>
+                Last night I had insomnia and I watched this comedian I've never seen before (who was hysterically funny) talk about this time he was on an airplane and he started smelling smoke. The pilot came on over the speaker and said "We're having a minor emergency. We are going to circle back to the airport. But don't worry, safety is our number one problem." The comedian said, "Suddenly, I had only one problem in the whole world...getting off that plane." 
+                <br><br>
+                Maybe it loses in the translation, but it had me rolling.<br>
+                I love your web site. It's amazing to me that you can be so funny given your personal turmoil. Whenever I visit the site, I have this image of you lying on satin sheets and just being gorgeous and funny all day. No cares at all.
+                <br><br>
+                Well, I guess I'll sign off for now. I think of you often and we shouldn't let so much time go by between contacts. I love you love you love you.....Pam
+                </p>
+
+                <img src="./images/pam_cut.jpg" class="article-image">
+
+                <p class="article">
+                On February 7th, 2000, I received my final email from her:<br>
+                Sher, <br>
+                The bottom line, the overall thing, the underlying lesson is this: you need to love yourself more. 
+                <br><br>
+                It's just like that time that guy stood me up and I got upset and wanted to manipulate him into wanting to be with me and I asked you to ask Beth what I should do and she said "Why does Pam want to date someone who would stand her up?" I have never forgotten that....
+                <br><br>
+                You want your son to insist in the future to be treated well by others, to stand up for himself, to think highly of himself, and the best way to teach him that is by example. <br>
+                So don't ever go forgetting all the good stuff you do that he learns from yon. A thousand times a day he learns how to be a good and beautiful person. A hard worker, industrious and creative. A good friend who is well loved by others.<br>
+                And I'm one of them....Pam
+                <br><br>
+                We spoke on the phone after I received that email. I told her how much I loved her and appreciated her encouragement. 
+                <br><br>
+                And she told me she was desperate to get away from her husband, Eric. I told her to leave, just to come here and she could live with me.
+                <br><br>
+                She said she would think about it, but it made her so angry to think about leaving her antique grandfather clock and her belongings -- why should she have to? How could she be so trapped? I encouraged her again to just get out.
+                <br><br>
+                Her husband shot her in the back of the head the following Friday night, February 12th, with a high-powered deer rifle. Her brother called and told me.
+                <br><br>
+                I was sitting in the same room I am sitting in now, when the phone rang. I kept saying, "oh, maybe she'll be ok.." He kept telling me, yelling, “NO! She's dead! She's dead!"
+                <br><br>
+                The cops allowed Eric's father to come in and clean the house. There went the evidence. So convenient.
+                <br><br>
+                Immediately, the reports were that somehow Pam, all 5'1" of her tiny self, had "provoked" her husband to blow her head apart. 
+                He got away with it.
+                <br><br>
+                I was never the same. I'll never be the same.
+                <br><br>
+                I found copies of some notes young, scared, poor women had written when they found out Pam was dead --, notes that were shared at her memorial service (where I went and made sure I confronted the grinning "preacher" who showed up, eye to eye. I wanted to let him know I KNOW who and what he is).
+                <br><br>
+                Here's what two young women, who saw Pam as their counselor wrote, when they heard about her death. I don't know who they are. But I know that Pam touched their lives.
+                <br><br>
+                "Today my heart is broke. You see I lost a friend.
+                Some may call her my counselor, but to me she was a friend.
+                She never listened to me because she had to, She listened because she cared. She laughed at my jokes, cried at my stories, and even felt my pain.<br>
+                I ask God why. And he tells me everything 's going to be all right.
+                You see, it’s funny, that's what she use to say..”
+                <br><br>
+                "My angel of kindness is gone from earth, but from every day on I'll have her in a secret place, MY HEART.<br>
+                And when I think of her, I'll smile: And pat my heart.<br>
+                Then when I close my eyes, I'll see my angel. And say thank you.<br>
+                For she's given me so much to look at within myself...<br>
+                So, God if you hear me, tell her I miss her already, and I'll see her again one day, but until then I'll have to hold my heart from the pain.”
+                </p>
+        </section>
+
+        <hr>
+        <hr>
+        <h3 class="recommendations">Read on:</h3>
+
+        <section class="recommendations">
+            <div class="group section">
+                <div class="col span_6_of_12">
+                    <img src="./images/iska_part2.jpg">
+                    <div class="recommendations_title_date">
+                        <h4>Another Fated Meeting with Iska</h4>
+                        <p>by Sher</p>
+                    </div>
+                    <p>Look, I’m sorry if anyone thought I was being a tease or that I have some Normal Rockwell-like scenario here with my tale...</p>
+                    <a class="button" href="pam2.html"> See more</a>
+                </div>
+                <div class="col span_6_of_12">
+                    <img src="./images/iska_part1_thumbnail.jpg">
+                    <div class="recommendations_title_date">
+                        <h4>Meeting Iksa</h4>
+                        <p>by Sher</p>
+                    </div>
+                    <p>I had a very moving experience one evening. I saw a homeless woman, pushing a grocery cart down the road loaded...</p>
+                    <a class="button" href="pam1.html"> See more</a>
+                </div>
+                <!-- <div class="col span_4_of_12">
+                    <img src="./images/purloined_credit_card_story.jpg">
+                    <div class="recommendations_title_date">
+                        <h4>The Case of the Purloined Credit Card</h4>
+                        <p>by Sher</p>
+                    </div>
+                    <p>When you live intown, you learn to keep your street smarts handy but even a dame who’s been around the block a few times. . .</p>
+                    <a class="button" href="purloinedcredit.html"> See more</a>
+                </div> -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!--<ul>
+            <li><a href="gals.html">Gals</a></li>
+            <li><a href="gals.html">Guys</a></li>
+            <li><a href="gals.html">Gays</a></li>
+            <li><a href="gals.html">Gasp!</a></li>
+            <li><a href="gals.html">Gas</a></li>
+        </ul>
+        <ul>
+            <li><a href="gals.html">Goodbyes</a></li>
+            <li><a href="gals.html">Galactic</a></li>
+            <li><a href="gals.html">Get Some</a></li>
+            <li><a href="gals.html">Who Are These Hussies</a></li>
+        </ul>-->
+        <div class="copy">
+            <p>
+                <span class="material-symbols-outlined">
+                copyright</span> Brazen Hussy &amp;
+                <span class="material-symbols-outlined">copyright</span>  Brazen Hussies
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script src="scripts/slidenav.js"></script>
+    <script src="scripts/totopbutton.js"></script>
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0";
+        }
+    </script>
+</body>
+</html>

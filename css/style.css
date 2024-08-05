@@ -30,52 +30,44 @@ Source = https://coolors.co/palette/22223b-4a4e69-9a8c98-c9ada7-f2e9e4
 /* MOBILE STYLESHEET */
 /* The Overlay (background) */
 .overlay {
-  /* Height & width depends on how you want to reveal the overlay (see JS below) */
   height: 100%;
   width: 0;
   position: fixed;
-  /* Stay in place */
   z-index: 1;
-  /* Sit on top */
-  left: 0;
   top: 0;
-  background: linear-gradient(#efedcc, #e9d183, #e9d183);
+  left: 0;
+  background-color: #841a07;
   overflow-x: hidden;
-  /* Disable horizontal scroll */
   transition: 0.5s;
-  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  padding-top: 60px;
 }
-/* Position the content inside the overlay */
-.overlay-content {
-  position: relative;
-  top: 15%;
-  /* 25% from the top */
-  width: 100%;
-  /* 100% width */
-  text-align: center;
-  /* Centered text/links */
-  margin-top: 30px;
-  /* 30px top margin to avoid conflict with the close button on smaller screens */
-}
-.overlay-content h2 {
-  padding-bottom: 1em;
-  font-family: 'Italiana', serif;
-}
-/* The navigation links inside the overlay */
 .overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #841a07;
+  padding: 8px 8px 8px 32px;
+  font-size: 1em;
+  color: #f0eed0;
   display: block;
-  /* Display block instead of inline */
-  transition: 0.3s;
-  /* Transition effects on hover (color) */
+  transition: 0.1s;
+  font-family: "Contrail One", sans-serif;
 }
-/* When you mouse over the navigation links, change their color */
-.overlay a:hover,
-.overlay a:focus {
-  color: #b4230a;
+.overlay a:hover {
+  background-color: #f0eed0;
+  color: #841a07;
+}
+.overlay h4 {
+  text-align: center;
+  color: #f0eed0;
+  font-weight: bold;
+  font-size: 1.75em;
+  padding: 0.25em 0 0.5em 0;
+  font-style: italic;
+  font-family: "Contrail One", sans-serif;
+}
+.overlay h5 {
+  color: #f0eed0;
+  font-style: italic;
+  font-size: 0.75em;
+  padding-left: 1.5em;
+  font-family: "Contrail One", sans-serif;
 }
 /* Position the close button (top right corner) */
 .overlay .closebtn {
@@ -84,15 +76,6 @@ Source = https://coolors.co/palette/22223b-4a4e69-9a8c98-c9ada7-f2e9e4
   right: 35px;
   font-size: 40px;
 }
-/* When the height of the screen is more than 450 pixels, change the font-size of the links and position the close button again
-@media screen and (max-height: 450px) {
-    .overlay a {font-size: 36px}
-    .overlay .closebtn {
-        font-size: 60px;
-        top: 20px;
-        right: 45px;
-    }
-} */
 #myBtn {
   display: none;
   position: fixed;
@@ -128,7 +111,7 @@ Source = https://coolors.co/palette/22223b-4a4e69-9a8c98-c9ada7-f2e9e4
 }
 .container h1 {
   color: #efedcc;
-  font-family: 'Italiana', serif;
+  font-family: "Contrail One", sans-serif;
   font-weight: bold;
 }
 .centered {
@@ -166,7 +149,7 @@ header h1 {
   color: #efedcc;
   font-size: 1.25em;
   padding-left: 1em;
-  font-family: 'Italiana', sans-serif;
+  font-family: "Contrail One", sans-serif;
 }
 header a {
   color: #23050c;
@@ -185,8 +168,17 @@ header div.top {
 header .desktop-nav {
   display: none;
 }
+header .top_logo {
+  padding: 0.5em 0.25em 0.25em 1em;
+  width: 50%;
+}
 main {
   padding: 0 1em;
+  transition: margin-left 0.5s;
+}
+main h3.recommendations {
+  font-size: 1.5em;
+  font-family: "Contrail One", sans-serif;
 }
 main section.article {
   background-color: #FFFFFF;
@@ -225,14 +217,21 @@ main section.note {
   padding: 1.5em 0.5em;
   border-radius: 5px;
   margin-top: 2em;
+  display: inline-block;
 }
 main section.note h2 {
   padding: 0 0.5em 0.5em 0.5em;
 }
 main section.note p {
-  font-size: 0.9em;
+  font-size: 1em;
   line-height: 1.8em;
   padding: 0 0.75em;
+}
+main section.note img {
+  width: 90%;
+  padding: 0 0.5em 1.5em 0.5em;
+  margin: auto;
+  display: block;
 }
 main section.recommendations {
   background-color: #FFFFFF;
@@ -287,6 +286,7 @@ main section.article_selection h2 {
   margin-right: auto;
   text-align: center;
   padding: 0.5em 0;
+  font-size: 2em;
 }
 main section.article_selection h3 {
   padding: 0.35em 0;
@@ -312,15 +312,58 @@ main section.article_selection p {
   line-height: 1.5em;
   font-size: 0.85em;
 }
+main section.article_selection .content-intro {
+  font-size: 1em;
+  font-weight: bold;
+  padding: 1em;
+  background-color: #841a07;
+  color: #f0eed0;
+  text-align: center;
+  border-radius: 5px;
+  width: 85%;
+}
+main section.article_selection .recent_article h3 {
+  font-family: "Contrail One", sans-serif;
+}
 main section.article_selection .recent_article .button {
   margin: 1em 2em 1em auto;
   width: 43%;
   background-color: #e9d183;
   border: 2px solid #c9a224;
 }
+main section.bios {
+  width: 75%;
+  margin: 1em auto;
+}
+main section.bios img {
+  margin-top: 2em;
+}
+main section.bios h3 {
+  font-family: "Contrail One", sans-serif;
+  font-style: normal;
+  margin-top: 1.5em;
+}
+main section.bios h4 {
+  margin-top: 0;
+  font-size: 2em;
+  padding: 0.25em 0em;
+  font-family: "Contrail One", sans-serif;
+  font-style: normal;
+}
+main section.bios h5 {
+  line-height: 1em;
+  padding-bottom: 1.5em;
+}
+main section.bios p {
+  width: 100%;
+}
+main section.bios hr {
+  margin-left: 0;
+  margin-right: 0;
+}
 main .bette {
   width: 100%;
-  margin: -2em auto;
+  margin: -1em auto;
 }
 main.paper-texture {
   background-color: #efedcc;
@@ -333,18 +376,19 @@ footer {
   text-align: center;
   padding: 0.5em;
   overflow-x: hidden;
-}
-footer ul {
-  display: inline-block;
-  margin: 0 auto;
-}
-footer li {
-  float: left;
-  padding: 0 0.5em;
-  font-size: 0.9em;
-}
-footer li a {
-  color: #ffffff;
+  margin-top: auto;
+  /*ul{
+        display: inline-block;
+        margin: 0 auto;
+    }
+    li{
+        float: left;
+        padding: 0 .5em;
+        font-size: .9em;
+        a{
+            color: @lightColor3;
+        }
+    }*/
 }
 footer .copy {
   font-size: 0.75em;
@@ -355,9 +399,11 @@ footer .copy {
 footer .copy .material-symbols-outlined {
   font-size: 0.75em;
 }
-footer.coverpage {
-  margin-top: 1.5em;
-}
+/*footer.coverpage{
+    margin-top: 1.5em;
+}/*
+
+//DETERMINES SIZING FOR ALL HEADINGS FOR THE PAGE BY EM
 /*main,
 header,
 footer,
@@ -420,6 +466,9 @@ body {
   line-height: 1.5em;
   background-color: #b4230a;
   color: #000000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 /*
 
@@ -438,6 +487,9 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
   .desktop_only {
     display: none;
   }
+  header .top_logo {
+    width: 35%;
+  }
   main h1 {
     font-size: 3em;
   }
@@ -448,7 +500,10 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
   }
   main section.note {
     display: block;
-    width: 100%;
+    width: 175%;
+  }
+  main section.note img {
+    width: 80%;
   }
   main img.desktop_only {
     width: 100%;
@@ -471,7 +526,7 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
   main section.article_selection h3 {
     text-align: left;
     font-size: 1.5em;
-    padding: 0.75em 0 0.5em 3em;
+    padding: 0.5em 0em 0.5em 1.5em;
   }
   main section.article_selection h4 {
     padding-left: 3em;
@@ -485,6 +540,9 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
     margin-left: auto;
     margin-right: auto;
     border-top: 2px solid #b4230a;
+  }
+  main section.article_selection .content-intro {
+    width: 60%;
   }
   main section.article_selection .recent_article img {
     width: 80%;
@@ -516,15 +574,40 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
     padding: 0;
     font-size: 0.65em;
   }
+  main section.bios {
+    width: 75%;
+    margin: 1em auto;
+  }
+  main section.bios img {
+    margin-top: 2em;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  main section.bios h3 {
+    text-align: center;
+    padding: 0.15em;
+    font-size: 2.5em;
+  }
+  main section.bios h4 {
+    padding-left: 0;
+  }
+  main section.bios hr {
+    width: 100%;
+  }
+  main .container h1 {
+    font-size: 2em;
+  }
   main.coverpage {
     overflow: hidden;
   }
   footer ul {
     font-size: 0.75em;
   }
-  footer.coverpage {
-    margin-top: 0;
-  }
+  /*footer.coverpage{
+        margin-top: 0;
+    }*/
   body {
     font-size: 24px;
   }
@@ -549,10 +632,14 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
   }
   .vl {
     border-left: 3px solid #b4230a;
+    left: 56%;
   }
   #myBtn {
     right: 65px;
     padding: 0.5em 4em;
+  }
+  header {
+    margin-left: 10em;
   }
   header h1 {
     font-size: 1.5em;
@@ -562,24 +649,51 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
   }
   header .desktop-nav {
     display: block;
+    height: 100%;
+    width: 10em;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #841a07;
+    overflow-x: hidden;
+    padding-top: 3em;
   }
-  header .desktop-nav ul {
-    display: inline-block;
-    margin: 0.25em auto 0 auto;
+  header .desktop-nav a {
+    padding: 6px 8px 6px 1.5em;
+    text-decoration: none;
+    font-size: 1em;
+    color: #f0eed0;
+    display: block;
+    font-family: "Contrail One", sans-serif;
   }
-  header .desktop-nav li {
-    float: left;
-    padding: 0 0.25em;
-  }
-  header .desktop-nav li a {
-    color: #efedcc;
-    padding: 0.5em;
-  }
-  header .desktop-nav li a.active {
-    font-weight: bold;
+  header .desktop-nav a:hover {
+    background-color: #f0eed0;
     color: #841a07;
-    background-color: #efedcc;
-    border-radius: 5px;
+    font-style: italic;
+  }
+  header .desktop-nav h4 {
+    text-align: center;
+    color: #f0eed0;
+    font-weight: bold;
+    font-size: 1.75em;
+    padding: 0.25em 0 1em 0;
+    font-style: italic;
+    font-family: "Contrail One", sans-serif;
+  }
+  header .desktop-nav h5 {
+    color: #f0eed0;
+    font-style: italic;
+    font-size: 0.75em;
+    padding-left: 1.5em;
+    padding-top: 1.5em;
+    font-family: "Contrail One", sans-serif;
+  }
+  header .top_logo {
+    width: 18%;
+  }
+  main {
+    margin-left: 10em;
   }
   main h1 {
     font-size: 4em;
@@ -591,10 +705,17 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
   }
   main .bette {
     width: 140%;
-    margin: 0 -6em;
+    margin: 0 -10em;
   }
   main section.note {
     padding: 1.5em;
+    width: 125%;
+  }
+  main section.note p {
+    font-size: 0.85em;
+  }
+  main section.note img {
+    width: 90%;
   }
   main section.article {
     padding: 1em 2.5em 3em 2.5em;
@@ -619,7 +740,7 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
   main section.article img.article-image {
     padding: 2em 2em 1em 2em;
     margin: 0 auto;
-    width: 50%;
+    width: 75%;
     display: block;
   }
   main section.article_selection h3 {
@@ -639,8 +760,12 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
   main section.article_selection hr {
     width: 45%;
   }
+  main section.article_selection .content-intro {
+    width: 45%;
+  }
   main section.article_selection .recent_article img {
-    width: 50%;
+    width: 45%;
+    margin-bottom: 1em;
   }
   main section.article_selection .recent_article .button {
     width: 15%;
@@ -648,6 +773,10 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
     margin-left: auto;
     margin-top: 2em;
     display: block;
+  }
+  main section.article_selection img.serious {
+    margin-top: 3.5em;
+    width: 35%;
   }
   main section.recommendations {
     display: block;
@@ -664,29 +793,25 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
     display: block;
     width: 50%;
   }
+  main section.bios img {
+    width: 35%;
+  }
+  main section.bios h4 {
+    width: 75%;
+    font-size: 2.5em;
+  }
+  main section.bios h5 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+  }
+  main section.bios p {
+    width: 75%;
+  }
+  main .container h1 {
+    font-size: 4em;
+  }
   main.coverpage {
     padding: 0 5em;
-  }
-  /*footer {
-        li{
-            a{
-                color: @lightColor3;
-                padding: .5em;
-            }
-            a.active{
-                font-weight: bold;
-                color: @darkColor1;
-                background-color: @lightColor3;
-                border-radius: 5px;
-            }
-        }
-        .copy{
-            width: 50%;
-            margin: 0 auto;
-        }
-    }*/
-  footer.coverpage {
-    position: fixed;
-    bottom: 0;
   }
 }
