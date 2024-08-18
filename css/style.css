@@ -453,6 +453,7 @@ a {
 }
 strong {
   font-weight: bolder;
+  font-size: 1.25em;
 }
 body.curtain-texture {
   background-image: url('../images/curtain_background.png');
@@ -740,7 +741,7 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
   main section.article img.article-image {
     padding: 2em 2em 1em 2em;
     margin: 0 auto;
-    width: 75%;
+    width: 60%;
     display: block;
   }
   main section.article_selection h3 {
