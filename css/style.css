@@ -272,6 +272,7 @@ main section.recommendations img {
 }
 main section.recommendations .button {
   background-color: #e9d183;
+  color: #000000;
   border: 2px solid #c9a224;
   margin-bottom: 2em;
 }
@@ -329,6 +330,7 @@ main section.article_selection .recent_article .button {
   margin: 1em 2em 1em auto;
   width: 43%;
   background-color: #e9d183;
+  color: #000000;
   border: 2px solid #c9a224;
 }
 main section.bios {
@@ -442,14 +444,12 @@ h6 {
 }
 a {
   text-decoration: none;
-  /*&:link {
-        //makes all link/buttons have black text
-        color: @darkColor;
-    }
-    &:visited {
-        //makes all link/buttons have black text even after clicking
-        color: @darkColor;
-    }*/
+}
+a:link {
+  color: #073bd7;
+}
+a:visited {
+  color: #3c0491;
 }
 strong {
   font-weight: bolder;
