@@ -363,7 +363,7 @@ main {
     }
     .bette{
         width: 100%;
-        margin: -1em auto;
+        margin: .5em auto -1em auto;
     }
 }
 main.paper-texture{
@@ -463,6 +463,11 @@ strong {
     font-size: 1.25em;
 }
 
+em{
+    font-size: .65em;
+    font-style: italic;
+}
+
 body.curtain-texture{
     background-image: url('../images/curtain_background.png');
     background-repeat: no-repeat;
@@ -516,7 +521,9 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
             font-size: 3em;
         }
         .bette{
-            width: 200%;
+            position: fixed;
+            z-index: -10;
+            width: 100%;
             max-width: none;
             margin: 0 -5em;
         }
@@ -677,7 +684,7 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
     }
 
     header{
-        margin-left: 10em;
+        margin-left: 13em;
         h1{
             font-size: 1.5em;
         }
@@ -687,7 +694,7 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
         .desktop-nav{
             display: block;
             height: 100%;
-            width: 10em;
+            width: 13em;
             position: fixed;
             z-index: 1;
             top: 0;
@@ -696,12 +703,13 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
             overflow-x: hidden;
             padding-top: 3em;
             a{
-                padding: 6px 8px 6px 1.5em;
+                padding: 6px 8px 20px 1.5em;
                 text-decoration: none;
                 font-size: 1em;
                 color: @color5;
                 display: block;
                 font-family: "Contrail One", sans-serif;
+                line-height: 20px;
             }
             a:hover{
                 background-color: @color5;
@@ -727,7 +735,7 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
             }
         }
         .top_logo{
-            width: 18%;
+            width: 25%;
         }
     }
 
@@ -742,7 +750,9 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
             width: 70%;
         }
         .bette{
-            width: 140%;
+            position: fixed;
+            z-index: -10;
+            width: 75%;
             margin: 0 -10em;
         }
         section.note{
