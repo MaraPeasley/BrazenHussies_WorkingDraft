@@ -152,7 +152,13 @@ header h1 {
   font-family: "Contrail One", sans-serif;
 }
 header a {
-  color: #23050c;
+  text-decoration: none;
+}
+header a:link {
+  color: #efedcc;
+}
+header a:visited {
+  color: #efedcc;
 }
 header .menu-icon {
   color: #efedcc;
@@ -205,7 +211,7 @@ main section.article img.article-image {
   padding: 2em 2em 1em 2em;
 }
 main section.article div.author {
-  display: inline-block;
+  display: none;
   padding: 0 0 2em 0.5em;
 }
 main section.article div.author p:first-child {

@@ -145,8 +145,16 @@ header {
         //font-family: 'Italiana', sans-serif;
         font-family: "Contrail One", sans-serif;
     }
-    a{
-        color: @color2;
+    a {
+        text-decoration: none;
+        &:link {
+            //makes all link/buttons have black text
+            color: @color3;
+        }
+        &:visited {
+            //makes all link/buttons have black text even after clicking
+            color: @color3;
+        }
     }
     .menu-icon{
         color: @color3;
@@ -199,7 +207,7 @@ main {
             padding:  2em 2em 1em 2em;
         }
         div.author{
-            display: inline-block;
+            display: none;
             padding: 0 0 2em .5em;
             p:first-child{
                 text-decoration: underline;
