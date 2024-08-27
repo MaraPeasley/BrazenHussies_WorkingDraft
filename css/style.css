@@ -725,7 +725,7 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
   }
   main section.note {
     padding: 1.5em;
-    width: 125%;
+    width: 140%;
   }
   main section.note p {
     font-size: 0.85em;
