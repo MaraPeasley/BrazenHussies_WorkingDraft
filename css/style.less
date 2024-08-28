@@ -157,6 +157,9 @@ header {
             color: @lightColor;
         }
     }
+    em{
+        font-size: .75em;
+    }
     .menu-icon{
         color: @lightColor;
         margin-right: 1em;
@@ -540,9 +543,9 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
         .bette{
             position: fixed;
             z-index: -10;
-            width: 100%;
+            width: 80%;
             max-width: none;
-            margin: 0 -5em;
+            margin: 0 0em;
         }
         section.note{
             display: block;
@@ -730,13 +733,13 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
             overflow-x: hidden;
             //padding-top: 1em;
             a{
-                padding: 15px 8px 15px 1.5em;
+                padding: 10px 8px 10px 1.5em;
                 text-decoration: none;
-                font-size: 1em;
+                font-size: .85em;
                 color: @color5;
                 display: block;
                 font-family: "Contrail One", sans-serif;
-                line-height: 20px;
+                line-height: 15px;
             }
             a:hover{
                 background-color: @color5;
@@ -744,13 +747,14 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
                 font-style: italic;
             }
             h4{
-                text-align: center;
+                text-align: left;
                 color: @color5;
                 font-weight: bold;
-                font-size: 1.75em;
-                padding: .25em 0;
+                font-size: 1.5em;
+                padding: .5em 1em .15em 1em;
                 font-style: italic;
                 font-family: "Contrail One", sans-serif;
+                border-bottom: #efedcc80 2px solid;
             }
             h5{
                 color: @color5;
@@ -759,6 +763,9 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
                 padding-left: 1.5em;
                 padding-top: 1.5em;
                 font-family: "Contrail One", sans-serif;
+            }
+            em{
+                font-size: .75em;
             }
         }
         .top_logo{
@@ -779,8 +786,8 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
         .bette{
             position: fixed;
             z-index: -10;
-            width: 75%;
-            margin: 0 -10em;
+            width: 60%;
+            margin: 0 -1em;
         }
         section.note{
             padding: 1.25em;
