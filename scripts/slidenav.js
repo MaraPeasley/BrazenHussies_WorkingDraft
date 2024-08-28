@@ -2,7 +2,7 @@
 MUST INCLUDE THIS IN HTML:
 <header>
         <h2>Website Title</h2>
-        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()"><span style="font-style: italic; padding-right: 10px;">Our Gee-Spot! </span> &#9776; open</span>
     </header>
 
     <nav id="mySidenav" class="sidenav">

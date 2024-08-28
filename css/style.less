@@ -29,7 +29,7 @@ Programmer: Mara Peasley
     padding-top: 60px;
     a{
         padding: 8px 8px 8px 32px;
-        font-size: 1em;
+        font-size: 1.05em;
         line-height: 1em;
         color: @color5;
         display: block;
@@ -70,7 +70,7 @@ Programmer: Mara Peasley
 #myBtn {
     display: none;
     position: fixed;
-    bottom: 15px;
+    bottom: 50px;
     right: 30px;
     z-index: 99;
     font-size: .75em;
@@ -158,11 +158,13 @@ header {
         }
     }
     .menu-icon{
-        color: @color3;
+        color: @lightColor;
         margin-right: 1em;
         align-items: center;
         display: flex;
         font-size: 1.25em;
+        font-family: "Contrail One", sans-serif;
+        //font-style: italic;
     }
     div.top{
         display: flex;
@@ -223,13 +225,13 @@ main {
         border-radius: 5px;
         margin-top: 2em;
         display: inline-block;
-        height: 75vh;
+        //height: 75vh;
         h2{
             padding: 0 .5em .5em .5em;
             //font-family: 'Kotta One', serif;
         }
         p{
-            font-size: 1em;
+            font-size: .75em;
             line-height: 1.8em;
             padding: 0 .75em;
         }
@@ -545,6 +547,7 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
         section.note{
             display: block;
             width: 175%;
+            height: 75vh;
             img{
                 width: 80%;
             }
@@ -703,6 +706,7 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
     }
     #myBtn{
         right: 65px;
+        bottom: 70px;
         padding: .5em 4em;
     }
 
