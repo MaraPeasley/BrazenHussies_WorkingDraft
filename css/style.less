@@ -30,6 +30,7 @@ Programmer: Mara Peasley
     a{
         padding: 8px 8px 8px 32px;
         font-size: 1em;
+        line-height: 1em;
         color: @color5;
         display: block;
         transition: 0.10s;
@@ -149,11 +150,11 @@ header {
         text-decoration: none;
         &:link {
             //makes all link/buttons have black text
-            color: @color3;
+            color: @lightColor;
         }
         &:visited {
             //makes all link/buttons have black text even after clicking
-            color: @color3;
+            color: @lightColor;
         }
     }
     .menu-icon{
@@ -193,7 +194,8 @@ main {
         h1{
             line-height: 1em;
             padding: .5em 0 0 0;
-            font-size: 2em;
+            //font-size: 2em;
+            font-size: 6vh;
         }
         p.date{
             font-size: .75em;
@@ -221,6 +223,7 @@ main {
         border-radius: 5px;
         margin-top: 2em;
         display: inline-block;
+        height: 75vh;
         h2{
             padding: 0 .5em .5em .5em;
             //font-family: 'Kotta One', serif;
@@ -231,7 +234,7 @@ main {
             padding: 0 .75em;
         }
         img{
-            width: 90%;
+            width: 75%;
             padding: 0 .5em 1.5em .5em;
             margin: auto;
             display: block;
@@ -392,6 +395,8 @@ footer {
     padding: .5em;
     overflow-x: hidden;
     margin-top: auto;
+    position: fixed;
+    bottom: 0;
     /*ul{
         display: inline-block;
         margin: 0 auto;
@@ -509,7 +514,7 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
 
 */
 
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 769px) {
     
     .mobile_only{
         display: none;
@@ -542,6 +547,9 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
             width: 175%;
             img{
                 width: 80%;
+            }
+            p{
+                font-size: 1.75vh;
             }
         }
         img.desktop_only{
@@ -653,6 +661,11 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
         ul{
             font-size: .75em;
         }
+        .copy{
+            margin-left: 7%;
+            margin-right: auto;
+            width: 100%;
+        }
     }
     /*footer.coverpage{
         margin-top: 0;
@@ -711,7 +724,7 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
             left: 0;
             background-color: @darkColor1;
             overflow-x: hidden;
-            padding-top: 3em;
+            //padding-top: 1em;
             a{
                 padding: 15px 8px 15px 1.5em;
                 text-decoration: none;
@@ -731,7 +744,7 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
                 color: @color5;
                 font-weight: bold;
                 font-size: 1.75em;
-                padding: .25em 0 1em 0;
+                padding: .25em 0;
                 font-style: italic;
                 font-family: "Contrail One", sans-serif;
             }
@@ -766,10 +779,11 @@ The following CSS affects all screen sizes larger than 1024 pixels wide.
             margin: 0 -10em;
         }
         section.note{
-            padding: 1.5em;
+            padding: 1.25em;
             width: 140%;
             p{
-                font-size: .85em;
+                //font-size: .85em;
+                font-size: 1.5vh;
             }
             img{
                 width: 90%;
