@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<!-- 
+NOTES:
+
+4/28/23
+Lots of changes made since creation
+See style.less for full list of notes and To Dos
+
+-->
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="author" content="Sher">
+    
+    <title>Brazen Hussies</title>
+    <meta property="og:title" content="Brazen Hussies">
+    <meta name="twitter:title" content="Brazen Hussies">
+
+    <!--<link rel="icon" type="image/x-icon" href="images/signature_ico_spaced.ico">-->
+    
+    <meta name="description" content="Greetings, sweetie darlings! New here? Welcome to the always class (in a tasteless, classless sort of way) BRAZEN HUSSIES!">
+    <meta property="og:description" content="Greetings, sweetie darlings! New here? Welcome to the always class (in a tasteless, classless sort of way) BRAZEN HUSSIES!">
+    <meta name="twitter:description" content="Greetings, sweetie darlings! New here? Welcome to the always class (in a tasteless, classless sort of way) BRAZEN HUSSIES!">
+    
+    <meta property="og:image" content="images/bette_transparent_zoom2.png">
+    <meta name="twitter:image" content="images/bette_transparent_zoom2.png">
+    
+    <!-- Kotta One, Italiana, Inria Serif font connect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Italiana&family=Kotta+One&display=swap" rel="stylesheet">
+    <!-- Contrail One font connect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Contrail+One&display=swap" rel="stylesheet">
+    <!-- Hamburger Menu material icons connect -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- Up Arrow material icons connect -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+<!-- Below are the 4 stylesheets needed to run this website:
+- reset.css clears all formatting for all default css on the site
+- helper.css adds some basic formatting and functionality back
+- grid.css is not currently being used but may be needed if you want to add charts/grids in the future
+- style.css is the output of LESS from the style.less sheet used to format and style the entire site
+- -->
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/helper.css" rel="stylesheet" type="text/css">
+    <link href="css/grid.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+    
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><span class="material-symbols-outlined" style="display: flex; justify-content: center;">keyboard_arrow_up</span></button>
+
+    <header>
+        <div class="top">
+            <a class="top_logo" href="index.html">
+                <img src="images/title_creme.png">
+            </a>
+            <div class="desktop-nav">
+                <!--<h5>Our</h5> -->
+                <h4><em>Our</em> Gee-Spot!</h4>
+                <a href="about.html">Get to Know Us</a>
+                <a href="gals.html">Gals  <br><em>classic stars, writers, humor</em></a>
+                <a href="guys.html">Guys <br><em>movies, fiction icons, true stories</em></a>
+                <a href="gays.html">Gays <br><em>gay rights, gay stars, interviews</em></a>
+                <a href="gossip.html">Gossip <br><em>celebrities, entertainment news</em></a>
+                <a href="gasp.html">Gasp! <br><em>humor, Sher's nutso true tales</em></a>
+                <a href="galactica.html">Galactica <br><em>space news, humor, art</em></a>
+                <a href="astro.html">Get ASTRO <br><em>hussy horoscopes, astrology</em></a>
+                <a href="movies.html">Get Popcorn <br><em>movie reviews classic & new</em></a>
+                <a href="gab.html">Gab <br><em>quotes, interviews</em></a>
+                <!-- <a href="silly.html">Get Silly</a> -->
+                <a href="goodbyes.html">Goodbyes <br><em>inspiring brazen lives</em></a>
+                <a href="serious.html">Getting Serious <br><em>social issues, love & loss</em></a>
+                <!-- <a href="store.html">Get Some</a> -->
+            </div>
+            <span onclick="openNav()" class="menu-icon"><span style="font-style: italic; padding-right: 10px;">Our Gee-Spot! </span> &#9776;</span>
+        </div>
+
+             <!-- The overlay -->
+        <div id="myNav" class="overlay">
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
+            <!-- Overlay content -->
+            <div class="overlay-content">
+                <!--<h5>Our</h5> -->
+                <h4><em>Our</em> Gee-Spot!</h4>
+                <a href="about.html">Get to Know Us</a>
+                <a href="gals.html">Gals  <br><em>classic stars, writers, humor</em></a>
+                <a href="guys.html">Guys <br><em>movies, fiction icons, true stories</em></a>
+                <a href="gays.html">Gays <br><em>gay rights, gay stars, interviews</em></a>
+                <a href="gossip.html">Gossip <br><em>celebrities, entertainment news</em></a>
+                <a href="gasp.html">Gasp! <br><em>humor, Sher's nutso true tales</em></a>
+                <a href="galactica.html">Galactica <br><em>space news, humor, art</em></a>
+                <a href="astro.html">Get ASTRO <br><em>hussy horoscopes, astrology</em></a>
+                <a href="movies.html">Get Popcorn <br><em>movie reviews classic & new</em></a>
+                <a href="gab.html">Gab <br><em>quotes, interviews</em></a>
+                <!-- <a href="silly.html">Get Silly</a> -->
+                <a href="goodbyes.html">Goodbyes <br><em>inspiring brazen lives</em></a>
+                <a href="serious.html">Getting Serious <br><em>social issues, love & loss</em></a>
+                <!-- <a href="store.html">Get Some</a> --> 
+            </div>
+        
+        </div>
+    </header>
+    
+    <main class="paper-texture">
+        <div class="container">
+            <img src="./images/article_arrow_header_mobile.png" class="mobile_only" style="width: 100%;">
+            <img src="./images/article_arrow_header_tablet.png" class="tablet_only" style="width: 100%;">
+            <img src="./images/article_arrow_header_tablet.png" class="desktop_only" style="width: 100%;">
+            <h1 class="centered">Guys</h1>
+        </div>
+        <section class="article">
+            <div class="group section" style="border-bottom: 1px solid #000000;">
+                <div class="col span_9_of_12">
+                    <h1>Frank Capra: Master Director of Classic Hollywood Classics!</h1>
+                </div>
+                <div class="col span_6_of_12">
+                    <div class="author">
+                        <p>Sherry Baker</p>
+                        <p style="line-height: .75em;">Brazen Hussies Founder</p>
+                    </div>
+                </div>
+            </div>
+
+            <img src="./images/meet-john-doe-free-movies-onlinefrank capra movie 2.jpg" class="article-image">
+
+            <p class="article" style="padding-top: .5em;">
+                "I made mistakes in drama. I thought drama was when actors cried. But drama is when the audience cries." -- Frank Capra, born May 18, 1897.
+                <br><br>
+                Looking for a flick to peruse, darlings?  One to make you laugh, or cry, or want to canoodle with the one you love?  We promise you’ll find one – likely many more – among movie directed by the wondrous Frank Capra
+                <br><br>
+                Born in Sicily. In l903, Cap came with his family to the US. They were immigrants, and poor - unable to speak English and subsisting on bread and some bananas on the boat to America.
+                As he grew up, Frank Capra went to school, sold newspapers, worked as a janitor and, as a teen,  and developed an interest in theater and lighting. After high school, he enrolled in the Throop College of Technology (which became the California Institute of Technology) to study chemical engineering. He worked in the school laundry to pay for the $250 a year tuition.
+                <br><br>
+                But Capra ended up besotted with the school's fine arts department, falling in love with words, the possibility of touching hearts and minds with creative expression.
+            </p>
+
+            <img src="./images/mr_smith_goes_to_washington_1939_poster.jpg" class="article-image">
+
+            <p class="article" style="padding-top: .5em;">
+                "It was a great discovery for me. I discovered language. I discovered poetry," Capra wrote in his autobiography. "That was a big turning point in my life. I didn't know anything could be so beautiful."
+                <br><br>
+                While finishing his final year of college, he enlisted in the army when the US declared war on Germany in l917 (although he wasn't a naturalized citizen at that point) and served as a supply officer for student soldiers. !
+                <br><br>
+                This Italian immigrant graduated -- with the highest grades in the college, by the way -- in September of l918. The next month, he was shipped out to active service but two things happened: World War I ended and he almost died from the Spanish flu that killed 20 million people around the globe.
+                <br><br>
+                When he recovered from the illness, Capra took whatever jobs he could get around L.A., including digging ditches. Then he found work as an extra and doing odd jobs for an independent movie studio that would soon become Columbia Pictures - where he would shine as a director one day. 
+            </p>
+
+            <img src="./images/it's_a_wonderful_life_1946_poster.jpeg" class="article-image">
+
+            <p class="article" style="padding-top: .5em;">
+                And what a wonderful director! Yes, his movies will make you cry - and laugh and think and, sometimes, stand up and cheer, or want to!
+                <br><br>
+                Capra directed "It Happened One Night," "It's a Wonderful Life," "Arsenic and Old Lace," "Mr. Smith Goes to Washington" and many more. During World War II, he also served once again in the military - and made documentaries to boost the morale of US soldiers and those on the home front.
+                <br><br>
+                The Brazen Hussies will always remember you,  Mr. Francesco Rosario Capra! We’re glad you made it to America. Your artistry has become part of the tapestry of our country's yearnings, dreams, smiles and tears. 
+                <br><br>
+                Your movies endure. They give us hope the basic goodness in people will, in the end, prevail.
+                And we thank you.
+            </p>
+        </section>
+
+        <hr>
+        <hr>
+        <h3 class="recommendations">Wanting more?</h3>
+
+        <section class="recommendations">
+            <div class="group section">
+                <div class="col span_4_of_12">
+                    <img src="./images/jimmy_carter_pic.jpg">
+                    <div class="recommendations_title_date">
+                        <h4>Hanging Out with Jimmy Carter</h4>
+                        <p>By Sher</p>
+                    </div>
+                    <p>Yes, darlings, I’ve been known to do things other than practice the art of the. . .</p>
+                    <a class="button" href="jimmycarter.html"> See more</a>
+                </div>
+                <div class="col span_4_of_12">
+                    <img src="./images/burgess2.jpg">
+                    <div class="recommendations_title_date">
+                        <h4>Dinners Once Upon a Time (really!) with Burgess Meredith</h4>
+                        <p>by Sher</p>
+                    </div>
+                    <p>“Like the seasons of the year, life changes frequently and...</p>
+                    <a class="button" href="guys.html"> See more</a>
+                </div>
+                <!--<div class="col span_4_of_12">
+                    <img src="./images/moreau_photo_thumb.jpg">
+                    <div class="recommendations_title_date">
+                        <h4>Jeanne Moreau: Joie de Vivre</h4>
+                        <p>by Sher</p>
+                    </div>
+                    <p>"As long as you don't make waves, ripples, life seems easy. But that's condemning yourself to impotence...</p>
+                    <a class="button" href="jeannemoreau.html"> See more</a>-->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+            <div class="copy">
+                <p>
+                    <span class="material-symbols-outlined">
+                    copyright</span> Copyright 1995-2024 Brazen Hussies
+                </p>
+            </div>
+        </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script src="scripts/slidenav.js"></script>
+    <script src="scripts/totopbutton.js"></script>
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.width = "280px";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0";
+        }
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3140791221877240" crossorigin="anonymous"></script>
+</body>
+</html>

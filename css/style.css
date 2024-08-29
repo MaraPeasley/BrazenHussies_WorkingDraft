@@ -59,9 +59,10 @@ Source = https://coolors.co/palette/22223b-4a4e69-9a8c98-c9ada7-f2e9e4
   color: #ffffff;
   font-weight: bold;
   font-size: 1.75em;
-  padding: 0.25em 0 0.5em 0;
+  padding: 0.25em 0;
   font-style: italic;
   font-family: "Contrail One", sans-serif;
+  border-bottom: #efedcc80 2px solid;
 }
 .overlay h5 {
   color: #ffffff;
@@ -507,6 +508,10 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
   }
   header .top_logo {
     width: 35%;
+  }
+  .overlay a {
+    font-size: 0.85em;
+    line-height: 0.75em;
   }
   main h1 {
     font-size: 3em;
