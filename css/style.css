@@ -338,6 +338,13 @@ main section.article_selection .content-intro {
 main section.article_selection .recent_article h3 {
   font-family: "Contrail One", sans-serif;
 }
+main section.article_selection .recent_article img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 0.75em;
+  max-width: 80%;
+}
 main section.article_selection .recent_article .button {
   margin: 1em 2em 1em auto;
   width: 43%;
@@ -574,7 +581,7 @@ The following CSS affects all screen sizes larger than 480 pixels wide.
     width: 60%;
   }
   main section.article_selection .recent_article img {
-    width: 80%;
+    max-width: 70%;
     margin-left: auto;
     margin-right: auto;
     display: block;
