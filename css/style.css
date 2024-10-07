@@ -1,8 +1,8 @@
 /*
 
 File Name: style.less
-Date: 05/31/21
-Programmer: Mara Peasley
+Date: 09/11/24
+Programmer: Mara Elise D. Peasley
 
 */
 /*Black and White variables*/
@@ -23,10 +23,6 @@ Source = https://coolors.co/palette/22223b-4a4e69-9a8c98-c9ada7-f2e9e4
 /*.topBorder() {
     border-top: double .5em #000000;
 }*/
-/*NOTES:
- - All comments updated on 02/21/24
-
-*/
 /* MOBILE STYLESHEET */
 /* The Overlay (background) */
 .overlay {
